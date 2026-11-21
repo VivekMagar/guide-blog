@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sathi-romania.example/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/start-here/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/start-here/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/start-here/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/start-here/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/start-here/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/start-here/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/start-here/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/start-here/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/send-money/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/send-money/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/send-money/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/send-money/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/send-money/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/send-money/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/send-money/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/send-money/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/tools/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/tools/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/tools/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/tools/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/tools/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/tools/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/tools/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/community/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/community/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/community/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/community/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/community/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/community/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/community/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/community/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/blog/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/blog/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/blog/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/blog/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/blog/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/blog/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/blog/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/banking-and-sim-cards/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/banking-and-sim-cards/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/banking-and-sim-cards/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/banking-and-sim-cards/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/banking-and-sim-cards/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/banking-and-sim-cards/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/banking-and-sim-cards/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/banking-and-sim-cards/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/first-week-in-romania-checklist/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/first-week-in-romania-checklist/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/first-week-in-romania-checklist/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/first-week-in-romania-checklist/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/first-week-in-romania-checklist/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/first-week-in-romania-checklist/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/first-week-in-romania-checklist/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/first-week-in-romania-checklist/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/health-insurance-and-doctors/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/health-insurance-and-doctors/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/health-insurance-and-doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/health-insurance-and-doctors/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/health-insurance-and-doctors/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/health-insurance-and-doctors/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/health-insurance-and-doctors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/health-insurance-and-doctors/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/housing-and-renting-room/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/housing-and-renting-room/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/housing-and-renting-room/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/housing-and-renting-room/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/housing-and-renting-room/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/housing-and-renting-room/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/housing-and-renting-room/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/housing-and-renting-room/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/taxes-contract-payslip-basics/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/taxes-contract-payslip-basics/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/taxes-contract-payslip-basics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/taxes-contract-payslip-basics/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/taxes-contract-payslip-basics/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/taxes-contract-payslip-basics/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/taxes-contract-payslip-basics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/taxes-contract-payslip-basics/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/useful-romanian-phrases-work/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/useful-romanian-phrases-work/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/useful-romanian-phrases-work/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/useful-romanian-phrases-work/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/useful-romanian-phrases-work/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/useful-romanian-phrases-work/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/useful-romanian-phrases-work/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/useful-romanian-phrases-work/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/guides/work-and-residence-permit-renewals/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/work-and-residence-permit-renewals/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/work-and-residence-permit-renewals/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/work-and-residence-permit-renewals/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/guides/work-and-residence-permit-renewals/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/guides/work-and-residence-permit-renewals/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/guides/work-and-residence-permit-renewals/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/guides/work-and-residence-permit-renewals/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/privacy/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/privacy/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/privacy/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/cookies/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/cookies/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/cookies/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/cookies/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/cookies/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/cookies/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/cookies/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/terms/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/terms/" />
+  </url>
+  <url>
+    <loc>https://sathi-romania.example/ne/terms/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sathi-romania.example/terms/" />
+    <xhtml:link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/terms/" />
+  </url>
+</urlset>

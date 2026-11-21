@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Money — RON to NPR Comparison — Sathi Romania</title>
+  <meta name="description" content="Compare live mid-market exchange rates, transfer speeds, and fees for sending money from Romania to Nepal." />
+  
+  <!-- Prevent Theme Flash -->
+  <script>
+    (function() {
+      try {
+        var s = localStorage.getItem('sathi_theme');
+        var d = s || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', d);
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- Canonical & Alternate Hreflang -->
+  <link rel="canonical" href="https://sathi-romania.example/send-money/" />
+  <link rel="alternate" hreflang="en" href="https://sathi-romania.example/send-money/" />
+  <link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/send-money/" />
+  <link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/send-money/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Send Money — RON to NPR Comparison — Sathi Romania" />
+  <meta property="og:description" content="Compare live mid-market exchange rates, transfer speeds, and fees for sending money from Romania to Nepal." />
+  <meta property="og:url" content="https://sathi-romania.example/send-money/" />
+  <meta property="og:site_name" content="Sathi Romania" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sathi-romania.example/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Send Money — RON to NPR Comparison — Sathi Romania" />
+  <meta name="twitter:description" content="Compare live mid-market exchange rates, transfer speeds, and fees for sending money from Romania to Nepal." />
+  <meta name="twitter:image" content="https://sathi-romania.example/assets/images/og-image.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  
+</head>
+<body data-slug="send-money">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Sathi Romania">
+        <span class="brand-flag">🇷🇴 🇳🇵</span>
+        <span class="brand-text">Sathi Romania</span>
+        <span class="brand-sub">Expat Guide</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="/start-here/" class="nav-link">Start Here</a>
+        <a href="/send-money/" class="nav-link">Send Money</a>
+        <a href="/tools/" class="nav-link">Tools</a>
+        <a href="/community/" class="nav-link">Community</a>
+        <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switch -->
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="/send-money/" class="lang-btn active" lang="en" hreflang="en" data-lang="en" aria-label="English">EN</a>
+          <a href="/ne/send-money/" class="lang-btn " lang="ne" hreflang="ne" data-lang="ne" aria-label="नेपाली">NP</a>
+        </div>
+
+        <!-- Dark/Light Mode Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/start-here/" class="nav-link">Start Here</a>
+    <a href="/send-money/" class="nav-link">Send Money</a>
+    <a href="/tools/" class="nav-link">Tools</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
+  </div>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+  <!-- Page Hero -->
+  <section class="sm-hero">
+    <div class="container">
+      <h1 class="sm-hero-title">???? ? ???? Send Money</h1>
+      <p class="sm-hero-sub">Compare live mid-market rates, transfer fees, and delivery speeds � so your family in Nepal receives the most money.</p>
+      <div class="sm-hero-badges">
+        <span class="sm-hero-badge">?? Live Rates</span>
+        <span class="sm-hero-badge">?? No Hidden Fees</span>
+        <span class="sm-hero-badge">? Instant Comparison</span>
+        <span class="sm-hero-badge">?? RON ? NPR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Layout -->
+  <section class="container">
+    <div class="sm-layout">
+
+      <!-- LEFT COLUMN: Rate Tracker Widget -->
+      <div id="widget">
+
+        <!-- Live Rate Card -->
+        <div class="sm-card" id="rate-card">
+          <div class="sm-card-header">
+            <span class="sm-card-icon">??</span>
+            <span class="sm-card-title" id="lbl-currentRate">Live Exchange Rate</span>
+          </div>
+          <div class="change-pills" role="status" aria-live="polite">
+            <div class="change-pill">
+              <span class="pill-label" id="lbl-vsYesterday">vs yesterday</span>
+              <span class="pill-value flat" id="change-1d">�</span>
+            </div>
+            <div class="change-pill">
+              <span class="pill-label" id="lbl-vs7days">vs 7 days ago</span>
+              <span class="pill-value flat" id="change-7d">�</span>
+            </div>
+          </div>
+          <div class="sm-card-body">
+            <div class="rate-primary" id="rate-display">
+              <span class="rate-prefix" id="rate-prefix">1 RON =</span>
+              <span class="rate-num" id="rate-num">�</span>
+              <span class="rate-currency">NPR</span>
+            </div>
+            <div class="rate-meta-row">
+              <span>?? <span id="lbl-lastUpdated">Last updated</span>: <strong id="last-updated-val">�</strong></span>
+              <span>?? <span id="lbl-source">Source</span>: <a href="https://open.er-api.com" target="_blank" rel="noopener">open.er-api.com</a></span>
+            </div>
+            <div class="stale-banner" id="stale-notice" role="alert"></div>
+          </div>
+        </div>
+
+        <!-- Currency Converter -->
+        <div class="sm-card">
+          <div class="sm-card-header">
+            <span class="sm-card-icon">??</span>
+            <span class="sm-card-title" id="lbl-converter">Currency Converter</span>
+          </div>
+          <div class="sm-card-body">
+            <div class="conv-wrap">
+              <div class="conv-row">
+                <div class="conv-field">
+                  <label for="input-from" id="lbl-amount">You send (RON)</label>
+                  <input type="number" id="input-from" value="100" min="0" step="any"
+                         inputmode="decimal" oninput="recalc()" />
+                </div>
+                <button class="swap-btn" onclick="swapCurrencies()" id="swap-btn" aria-label="Swap currencies" title="Swap direction">?</button>
+                <div class="conv-result-box">
+                  <label id="lbl-result">They receive</label>
+                  <div class="conv-result" id="conv-result" aria-live="polite" role="status">�</div>
+                </div>
+              </div>
+              <div class="conv-direction" id="conv-direction">RON ? NPR � mid-market rate</div>
+              <div class="conv-disclaimer" id="disclaimer-text">
+                Mid-market rate for reference only. Banks and transfer services charge their own fees � your family will receive less. See the comparison for real amounts.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 30-Day Range -->
+        <div class="sm-card">
+          <div class="sm-card-header">
+            <span class="sm-card-icon">??</span>
+            <span class="sm-card-title" id="lbl-rangeTitle">30-Day Range</span>
+          </div>
+          <div class="sm-card-body">
+            <div class="range-row">
+              <div class="range-item">
+                <span class="ri-label" id="lbl-highest">Highest</span>
+                <span class="ri-value high" id="range-high">�</span>
+              </div>
+              <div class="range-item">
+                <span class="ri-label" id="lbl-lowest">Lowest</span>
+                <span class="ri-value low" id="range-low">�</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="sm-card">
+          <div class="sm-card-header">
+            <span class="sm-card-icon">??</span>
+            <span class="sm-card-title" id="lbl-chartTitle">Rate History</span>
+          </div>
+          <div class="sm-card-body">
+            <div class="chart-header">
+              <span style="font-size:0.78rem;color:var(--text-muted)">1 RON in NPR over time</span>
+              <div class="period-toggle" role="group" aria-label="Chart period">
+                <button class="period-btn" id="pbtn-7"  onclick="setPeriod(7)"  data-days="7">7D</button>
+                <button class="period-btn active" id="pbtn-30" onclick="setPeriod(30)" data-days="30">30D</button>
+                <button class="period-btn" id="pbtn-90" onclick="setPeriod(90)" data-days="90">90D</button>
+              </div>
+            </div>
+            <div class="chart-wrap">
+              <canvas id="rate-chart" aria-label="Exchange rate history chart" role="img"></canvas>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end widget -->
+
+      <!-- RIGHT COLUMN: Provider Comparison -->
+      <section id="comparison-section" aria-labelledby="cmp-title">
+
+        <!-- Section Header -->
+        <div class="cmp-header-card">
+          <h2 class="cmp-heading" id="cmp-title" data-i18n="compTitle">Provider Comparison</h2>
+          <p class="cmp-subheading" data-i18n="compSubtitle">Find the best deal for sending money Romania ? Nepal</p>
+        </div>
+
+        <!-- Controls -->
+        <div class="cmp-controls-card">
+          <div class="cmp-amount-row">
+            <label for="cmp-amount" data-i18n="compAmountLabel">Amount you send (RON)</label>
+            <input type="number" id="cmp-amount" value="500" min="1" step="any"
+                   inputmode="decimal" oninput="renderComparison()" placeholder="e.g. 500" />
+          </div>
+          <hr class="cmp-controls-divider" />
+          <div class="cmp-filter-row" role="group" aria-label="Filter by payout method">
+            <span class="cmp-filter-label">Payout:</span>
+            <button type="button" class="cmp-filter-btn active" id="filter-all"    aria-pressed="true"  onclick="setPayoutFilter('all')"    data-i18n="compFilterAll">All</button>
+            <button type="button" class="cmp-filter-btn"        id="filter-bank"   aria-pressed="false" onclick="setPayoutFilter('bank')"   data-i18n="compFilterBank">Bank transfer</button>
+            <button type="button" class="cmp-filter-btn"        id="filter-cash"   aria-pressed="false" onclick="setPayoutFilter('cash')"   data-i18n="compFilterCash">Cash pickup</button>
+            <button type="button" class="cmp-filter-btn"        id="filter-wallet" aria-pressed="false" onclick="setPayoutFilter('wallet')" data-i18n="compFilterWallet">Mobile wallet</button>
+          </div>
+          <div class="cmp-sort-row" role="group" aria-label="Sort order">
+            <span class="cmp-sort-label">Sort:</span>
+            <button type="button" class="cmp-sort-btn active" id="sort-cheapest" aria-pressed="true"  onclick="setSortMode('cheapest')" data-i18n="compSortCheapest">?? Most received</button>
+            <button type="button" class="cmp-sort-btn"        id="sort-fastest"  aria-pressed="false" onclick="setSortMode('fastest')"  data-i18n="compSortFastest">? Fastest first</button>
+          </div>
+        </div>
+
+        <!-- Alerts -->
+        <p class="cmp-placeholder-note" id="cmp-placeholder-note" hidden data-i18n="compPlaceholderNote">
+          ?? These rows show placeholder data. NPR amounts appear once provider data is updated in <code>data/providers.json</code>.
+        </p>
+        <div class="cmp-stale-warning" id="cmp-stale-warning" role="alert" data-i18n="compStaleWarning">
+          ?? Some data may be outdated (last checked over 14 days ago). Please verify on each provider's site.
+        </div>
+
+        <!-- Results -->
+        <div id="cmp-cards" aria-live="polite">
+          <p class="cmp-no-results" data-i18n="compLoading">Loading providers�</p>
+        </div>
+
+        <!-- Disclosure -->
+        <div class="cmp-footer-card">
+          <p class="cmp-disclosure" data-i18n="compDisclosure">
+            ?? We may earn a small commission if you use affiliate links. This never affects our rankings � providers are sorted purely by the NPR amount your recipient receives.
+          </p>
+          <p class="cmp-notice" id="cmp-disclaimer-line">
+            Rates and fees change frequently. Always verify on the provider's website before sending.
+          </p>
+        </div>
+
+      </section><!-- end comparison -->
+
+    </div><!-- end sm-layout -->
+  </section>
+  <!-- Load Chart.js and Comparison Modules -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4/dist/chart.umd.min.js" defer></script>
+  <script src="/comparison.js"></script>
+  <script>
+    // Initialize Tracker State
+    var currentLang = 'en';
+    var currentPeriod = 30;
+    var isSwapped = false;
+    var rateData = null;
+    var isStale = false;
+    var chartInstance = null;
+
+    var trackerTranslations = {
+      en: {
+        currentRate: 'Current Rate',
+        lastUpdated: 'Last updated',
+        source: 'Source',
+        vsYesterday: 'vs yesterday',
+        vs7days: 'vs 7 days ago',
+        converter: 'Currency Converter',
+        amount: 'Amount',
+        result: 'Result',
+        disclaimer: 'This is the mid-market rate for reference only. Banks and transfer services apply their own rates and fees, so the amount your family receives will be lower. Check the comparison table below for real amounts.',
+        rangeTitle: 'Past 30 Days Range',
+        highest: 'Highest',
+        lowest: 'Lowest',
+        chartTitle: 'Exchange Rate History',
+        rateLabel: '1 RON ='
+      },
+      ne: {
+        currentRate: 'हालको दर',
+        lastUpdated: 'अन्तिम अपडेट',
+        source: 'स्रोत',
+        vsYesterday: 'हिजोको तुलनामा',
+        vs7days: '७ दिन अगाडिको तुलनामा',
+        converter: 'मुद्रा रूपान्तरक',
+        amount: 'रकम',
+        result: 'नतिजा',
+        disclaimer: 'यो मध्य-बजार दर केवल सन्दर्भका लागि हो। बैंक र हस्तान्तरण सेवाहरूले आफ्नै दर र शुल्कहरू लागू गर्छन्, त्यसैले तपाईंको परिवारले पाउने रकम कम हुनेछ। वास्तविक रकमका लागि तलको तुलना तालिका हेर्नुहोस्।',
+        rangeTitle: 'पछिल्लो ३० दिनको दायरा',
+        highest: 'उच्चतम',
+        lowest: 'न्यूनतम',
+        chartTitle: 'विनिमय दर इतिहास',
+        rateLabel: '१ RON ='
+      }
+    };
+
+    function setLang(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang;
+      var t = trackerTranslations[lang] || trackerTranslations.en;
+      if (document.getElementById('lbl-currentRate')) document.getElementById('lbl-currentRate').textContent = t.currentRate;
+      if (document.getElementById('lbl-lastUpdated')) document.getElementById('lbl-lastUpdated').textContent = t.lastUpdated;
+      if (document.getElementById('lbl-source')) document.getElementById('lbl-source').textContent = t.source;
+      if (document.getElementById('lbl-vsYesterday')) document.getElementById('lbl-vsYesterday').textContent = t.vsYesterday;
+      if (document.getElementById('lbl-vs7days')) document.getElementById('lbl-vs7days').textContent = t.vs7days;
+      if (document.getElementById('lbl-converter')) document.getElementById('lbl-converter').textContent = t.converter;
+      if (document.getElementById('lbl-amount')) document.getElementById('lbl-amount').textContent = t.amount;
+      if (document.getElementById('lbl-result')) document.getElementById('lbl-result').textContent = t.result;
+      if (document.getElementById('disclaimer-text')) document.getElementById('disclaimer-text').textContent = t.disclaimer;
+      if (document.getElementById('lbl-rangeTitle')) document.getElementById('lbl-rangeTitle').textContent = t.rangeTitle;
+      if (document.getElementById('lbl-highest')) document.getElementById('lbl-highest').textContent = t.highest;
+      if (document.getElementById('lbl-lowest')) document.getElementById('lbl-lowest').textContent = t.lowest;
+      if (document.getElementById('lbl-chartTitle')) document.getElementById('lbl-chartTitle').textContent = t.chartTitle;
+      if (document.getElementById('rate-prefix')) document.getElementById('rate-prefix').textContent = t.rateLabel;
+      if (typeof updateComparisonLang === 'function') updateComparisonLang(lang);
+      if (rateData) recalc();
+    }
+
+    function fmtNPR(val) { return new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 }).format(val); }
+    function fmtRON(val) { return new Intl.NumberFormat('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(val); }
+    function fmtDate(iso) { return iso ? new Date(iso).toLocaleDateString() : '—'; }
+    function fmtChartDate(str) { var p = str.split('-').map(Number); return new Date(p[0], p[1]-1, p[2]).toLocaleDateString('en-US', { month: 'short', day: 'numeric'}); }
+    function fmtPct(val) { return (val > 0 ? '+' : '') + val.toFixed(2) + '%'; }
+
+    function recalc() {
+      if (!rateData) return;
+      var rate = rateData.currentRate;
+      var input = parseFloat(document.getElementById('input-from').value);
+      var resEl = document.getElementById('conv-result');
+      var dirEl = document.getElementById('conv-direction');
+      if (isNaN(input) || input < 0) { resEl.textContent = '—'; return; }
+      if (!isSwapped) {
+        resEl.textContent = fmtNPR(input * rate) + ' NPR';
+        dirEl.textContent = 'RON → NPR';
+      } else {
+        resEl.textContent = fmtRON(input / rate) + ' RON';
+        dirEl.textContent = 'NPR → RON';
+      }
+    }
+
+    function swapCurrencies() {
+      isSwapped = !isSwapped;
+      document.getElementById('lbl-amount').textContent = isSwapped ? 'NPR' : 'Amount';
+      recalc();
+    }
+
+    function renderChange(elId, current, past) {
+      var el = document.getElementById(elId);
+      if (!el || past == null || current == null) return;
+      var pct = ((current - past) / past) * 100;
+      el.textContent = (pct > 0 ? '▲ +' : pct < 0 ? '▼ ' : '— ') + pct.toFixed(2) + '%';
+      el.className = 'pill-value ' + (pct > 0 ? 'up' : pct < 0 ? 'down' : 'flat');
+    }
+
+    function renderRange(history) {
+      var last30 = history.slice(-30);
+      if (!last30.length) return;
+      var rates = last30.map(function(e) { return e.rate; });
+      document.getElementById('range-high').textContent = fmtNPR(Math.max.apply(Math, rates));
+      document.getElementById('range-low').textContent = fmtNPR(Math.min.apply(Math, rates));
+    }
+
+    function setPeriod(days) {
+      currentPeriod = days;
+      [7, 30, 90].forEach(function(d) {
+        var btn = document.getElementById('pbtn-' + d);
+        if (btn) btn.classList.toggle('active', d === days);
+      });
+      if (rateData && rateData.history) buildChart(rateData.history);
+    }
+
+    function buildChart(history) {
+      if (typeof Chart === 'undefined') return;
+      var subset = history.slice(-currentPeriod);
+      var labels = subset.map(function(e) { return fmtChartDate(e.date); });
+      var values = subset.map(function(e) { return e.rate; });
+
+      if (chartInstance) {
+        chartInstance.data.labels = labels;
+        chartInstance.data.datasets[0].data = values;
+        chartInstance.update('none');
+        return;
+      }
+
+      var canvas = document.getElementById('rate-chart');
+      if (!canvas) return;
+      chartInstance = new Chart(canvas.getContext('2d'), {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [{
+            label: '1 RON in NPR',
+            data: values,
+            borderColor: '#2563eb',
+            borderWidth: 2,
+            tension: 0.3,
+            fill: false,
+            pointRadius: subset.length > 30 ? 0 : 3
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: { legend: { display: false } }
+        }
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      setLang(currentLang);
+      fetch('/data/rates.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          rateData = data;
+          document.getElementById('rate-num').textContent = fmtNPR(data.currentRate);
+          document.getElementById('last-updated-val').textContent = fmtDate(data.lastUpdated);
+          var h = data.history || [];
+          if (h.length >= 2) renderChange('change-1d', data.currentRate, h[h.length - 2].rate);
+          if (h.length >= 8) renderChange('change-7d', data.currentRate, h[h.length - 8].rate);
+          renderRange(h);
+          recalc();
+          var checkChart = setInterval(function() {
+            if (typeof Chart !== 'undefined') {
+              clearInterval(checkChart);
+              buildChart(h);
+            }
+          }, 100);
+        });
+      
+      if (typeof initComparison === 'function') {
+        initComparison();
+      }
+    });
+  </script>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom:0.75rem">
+            <span class="brand-flag">🇷🇴 🇳🇵</span>
+            <span>Sathi Romania</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; line-height:1.6">
+            Sathi Romania is a non-commercial, bilingual information hub created to empower Nepalese workers with accurate, accessible, and practical guides.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="/start-here/">Start Here</a></li>
+            <li><a href="/send-money/">Send Money</a></li>
+            <li><a href="/tools/">Tools</a></li>
+            <li><a href="/community/">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Legal &amp; Transparency</div>
+          <ul class="footer-links">
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/terms/">Terms & Disclaimer</a></li>
+            <li><span style="color:var(--text-muted); font-size:0.8rem">contact@sathi-romania.example</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimers">
+        <p>Affiliate Disclosure: We may receive a small commission when you click certain transfer links. This never impacts the rate you get, what you pay, or our rankings (which are strictly mathematical).</p>
+        <p>Legal Disclaimer: All materials on this portal are for informational and educational purposes only and do not constitute legal, financial, or immigration counsel. Consult official Romanian immigration authorities (IGI) or certified legal experts for individual cases.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sathi Romania. Built with community care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-Side Scripts -->
+  <script>
+    window.__NEWSLETTER_ENDPOINT__ = "";
+    window.__SATHI_ANALYTICS_CONFIG__ = {
+      enabled: false,
+      domain: "sathi-romania.example"
+    };
+  </script>
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

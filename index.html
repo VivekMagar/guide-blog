@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sathi Romania — Sathi Romania</title>
+  <meta name="description" content="The independent guide and community for Nepalese workers in Romania" />
+  
+  <!-- Prevent Theme Flash -->
+  <script>
+    (function() {
+      try {
+        var s = localStorage.getItem('sathi_theme');
+        var d = s || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', d);
+      } catch(e) {}
+    })();
+  </script>
+
+  <!-- Canonical & Alternate Hreflang -->
+  <link rel="canonical" href="https://sathi-romania.example/" />
+  <link rel="alternate" hreflang="en" href="https://sathi-romania.example/" />
+  <link rel="alternate" hreflang="ne" href="https://sathi-romania.example/ne/" />
+  <link rel="alternate" hreflang="x-default" href="https://sathi-romania.example/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sathi Romania — Sathi Romania" />
+  <meta property="og:description" content="The independent guide and community for Nepalese workers in Romania" />
+  <meta property="og:url" content="https://sathi-romania.example/" />
+  <meta property="og:site_name" content="Sathi Romania" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="https://sathi-romania.example/assets/images/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sathi Romania — Sathi Romania" />
+  <meta name="twitter:description" content="The independent guide and community for Nepalese workers in Romania" />
+  <meta name="twitter:image" content="https://sathi-romania.example/assets/images/og-image.png" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Sathi Romania","url":"https://sathi-romania.example","description":"The independent guide and community for Nepalese workers in Romania","inLanguage":["en","ne"]}</script>
+</head>
+<body data-slug="home">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand" aria-label="Sathi Romania">
+        <span class="brand-flag">🇷🇴 🇳🇵</span>
+        <span class="brand-text">Sathi Romania</span>
+        <span class="brand-sub">Expat Guide</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="/start-here/" class="nav-link">Start Here</a>
+        <a href="/send-money/" class="nav-link">Send Money</a>
+        <a href="/tools/" class="nav-link">Tools</a>
+        <a href="/community/" class="nav-link">Community</a>
+        <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
+      </nav>
+
+      <div class="header-actions">
+        <!-- Language Switch -->
+        <div class="lang-switch" role="group" aria-label="Language">
+          <a href="/" class="lang-btn active" lang="en" hreflang="en" data-lang="en" aria-label="English">EN</a>
+          <a href="/ne/" class="lang-btn " lang="ne" hreflang="ne" data-lang="ne" aria-label="नेपाली">NP</a>
+        </div>
+
+        <!-- Dark/Light Mode Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+          <span class="theme-icon" id="theme-icon">🌙</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-nav-toggle" aria-expanded="false" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <a href="/start-here/" class="nav-link">Start Here</a>
+    <a href="/send-money/" class="nav-link">Send Money</a>
+    <a href="/tools/" class="nav-link">Tools</a>
+    <a href="/community/" class="nav-link">Community</a>
+    <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
+  </div>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+    
+  <!-- Hero -->
+  <section class="hero container">
+    <div class="hero-badge">🇷🇴 🇳🇵 Free &amp; Independent Community Resource</div>
+    <h1 class="hero-title">Your Trusted Guide to Living &amp; Working in Romania</h1>
+    <p class="hero-subtitle">Practical checklists, verified legal paperwork, rights explanations, and live RON → NPR money transfer comparisons for Nepalese workers.</p>
+    <div class="hero-actions">
+      <a href="/start-here/" class="btn btn-primary">Start with Newcomer Guide</a>
+      <a href="/send-money/" class="btn btn-secondary">Check Transfer Rates</a>
+    </div>
+  </section>
+
+  <!-- Two Big Cards -->
+  <section class="container">
+    <div class="action-cards">
+      <div class="action-card">
+        <div class="action-card-icon">🧳</div>
+        <h2 class="action-card-title">New in Romania? Start Here</h2>
+        <p class="action-card-desc">Everything you need for your first 30 days: airport arrival, residence permits, sim card, bank account, and avoiding recruitment scams.</p>
+        <a href="/start-here/" class="btn btn-primary">Open Newcomer Checklist →</a>
+      </div>
+
+      <div class="action-card">
+        <div class="action-card-icon">💸</div>
+        <h2 class="action-card-title">Send Money to Nepal (RON → NPR)</h2>
+        <p class="action-card-desc">Live mid-market exchange rate tracker, fee calculators, and honest provider comparisons so your family receives the most rupees.</p>
+        <a href="/send-money/" class="btn btn-primary">Compare Transfer Services →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Rate Tracker Widget Section -->
+  <section class="home-tracker-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Live RON → NPR Exchange Rate &amp; Converter</h2>
+        <p class="section-sub">Real-time mid-market rate updated twice daily. Use the converter below to calculate your family&#39;s payout.</p>
+      </div>
+
+      <div class="widget-embed-frame">
+        <!-- Embedded Rate Card & Converter from our widget -->
+        <div class="card" style="margin-bottom:1rem;">
+          <div class="rate-label" style="font-size:0.78rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.35rem">Current Mid-Market Rate</div>
+          <div class="rate-value" style="font-size:2.3rem; font-weight:800; color:var(--text); line-height:1">
+            <span>1 RON = </span>
+            <span id="home-rate-val">31.16</span>
+            <span style="font-size:1.1rem; color:var(--text-muted)"> NPR</span>
+          </div>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.5rem">
+            Updated twice daily from open.er-api.com • Reference rate only
+          </div>
+        </div>
+
+        <div class="card">
+          <div style="font-size:0.9rem; font-weight:700; margin-bottom:0.75rem">Quick Converter</div>
+          <div style="display:flex; gap:0.5rem; align-items:center;">
+            <div style="flex:1">
+              <label for="home-calc-ron" style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase;">RON Amount</label>
+              <input type="number" id="home-calc-ron" value="500" class="newsletter-input" style="width:100%; font-size:1.1rem; font-weight:700;" />
+            </div>
+            <div style="font-size:1.3rem; color:var(--text-muted); padding-top:1.2rem;">→</div>
+            <div style="flex:1">
+              <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; display:block;">Recipient Gets (NPR)</span>
+              <div id="home-calc-res" style="background:var(--bg-input); padding:0.65rem 0.8rem; border-radius:var(--radius-sm); font-size:1.15rem; font-weight:800; border:1px solid var(--border); min-height:48px; display:flex; align-items:center;">
+                15,582 NPR
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:1rem; text-align:center;">
+            <a href="/send-money/" class="btn btn-secondary" style="width:100%">
+              Compare Transfer Fees & Real Payouts →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Guides Section -->
+  <section class="container" style="padding: 2.5rem 0 1rem;">
+    <div style="display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:1.25rem;">
+      <div>
+        <h2 class="section-title">Essential Guides for Romanian Expat Life</h2>
+        <p class="section-sub">Clear, verified explanations of contracts, healthcare, permits, and daily life in Romania.</p>
+      </div>
+      <a href="/start-here/" style="font-weight:700; font-size:0.9rem; display:none;">View all guides →</a>
+    </div>
+
+    <div class="guides-grid">
+      
+        <a href="/guides/banking-and-sim-cards/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">Banking &amp; Prepaid SIM Cards in Romania: A Guide for Expats</h3>
+          <p class="guide-card-desc">How to open a Romanian bank account, get your RON IBAN for salary, choose the best prepaid mobile SIM card, and send money to Nepal safely.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+        <a href="/guides/first-week-in-romania-checklist/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">First Week in Romania Checklist for Nepalese Workers</h3>
+          <p class="guide-card-desc">A step-by-step checklist for your first 7 days in Romania: airport arrival, company accommodation, SIM cards, work registration, and rights.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+        <a href="/guides/health-insurance-and-doctors/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">Health Insurance &amp; Seeing a Doctor in Romania (CNAS &amp; Healthcare)</h3>
+          <p class="guide-card-desc">How Romanian public health insurance works for foreign workers: registering with a family doctor (medic de familie), emergency room visits (UPU), and sick leave.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+        <a href="/guides/housing-and-renting-room/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">Housing &amp; Renting a Room in Romania: What Workers Must Know</h3>
+          <p class="guide-card-desc">A complete guide to employer housing standards, renting a private apartment or shared room, ANAF lease contracts, utility bills, and IGI residence registration.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+        <a href="/guides/taxes-contract-payslip-basics/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">Taxes, Employment Contracts &amp; Payslip Basics in Romania</h3>
+          <p class="guide-card-desc">Understand your Romanian work contract (CIM), payslip (fluturaș de salariu), gross vs net salary calculations, social security deductions, and labor rights.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+        <a href="/guides/useful-romanian-phrases-work/" class="guide-card">
+          <span class="guide-card-tag">Expat Guide</span>
+          <h3 class="guide-card-title">Useful Romanian Phrases for Nepalese Workers (Kitchen, Hotel, Shop, Offices)</h3>
+          <p class="guide-card-desc">Practical Romanian phrases and workplace vocabulary with English and Nepali explanations for restaurant kitchens, hotels, construction sites, and public offices.</p>
+          <div class="guide-card-meta">
+            <span>📅 2026-11-19</span>
+            <span style="font-weight:700; color:var(--accent);">Read →</span>
+          </div>
+        </a>
+      
+    </div>
+  </section>
+
+  <!-- Newsletter Signup Component -->
+  
+  <section class="container">
+    <div class="newsletter-card">
+      <h2 class="newsletter-title">Stay Informed on Romanian Visa &amp; Labor Updates</h2>
+      <p class="newsletter-desc">Get notified when immigration laws change, work permit rules update, or new money-saving transfer tips are published. Strictly no spam.</p>
+      
+      <form class="newsletter-form" action="#" method="POST"
+            data-msg-success="Thank you! You have been subscribed for email updates."
+            data-err-invalid="Please enter a valid email address and check the consent box.">
+        <div class="newsletter-input-group">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input type="email" id="newsletter-email" name="email" class="newsletter-input" 
+                 placeholder="Enter your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe for Free</button>
+        </div>
+        
+        <label class="newsletter-consent">
+          <input type="checkbox" name="consent" required />
+          <span>
+            I agree to receive monthly informational updates. I understand I can unsubscribe anytime. 
+            We respect your privacy. Read our 
+            <a href="/privacy/" style="text-decoration:underline">Privacy Policy</a>.
+          </span>
+        </label>
+        
+        <div class="newsletter-status" role="alert"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quick Calculator JS Script -->
+  <script>
+    (function() {
+      var ronInput = document.getElementById('home-calc-ron');
+      var resEl = document.getElementById('home-calc-res');
+      var rateEl = document.getElementById('home-rate-val');
+      var currentRate = 31.1643;
+
+      fetch('/data/rates.json')
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+          if (d && d.currentRate) {
+            currentRate = d.currentRate;
+            if (rateEl) rateEl.textContent = currentRate.toFixed(2);
+            calc();
+          }
+        })
+        .catch(function() {});
+
+      function calc() {
+        if (!ronInput || !resEl) return;
+        var val = parseFloat(ronInput.value) || 0;
+        var npr = Math.round(val * currentRate);
+        resEl.textContent = new Intl.NumberFormat().format(npr) + ' NPR';
+      }
+
+      if (ronInput) ronInput.addEventListener('input', calc);
+    })();
+  </script>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom:0.75rem">
+            <span class="brand-flag">🇷🇴 🇳🇵</span>
+            <span>Sathi Romania</span>
+          </div>
+          <p style="color:var(--text-muted); font-size:0.88rem; max-width:380px; line-height:1.6">
+            Sathi Romania is a non-commercial, bilingual information hub created to empower Nepalese workers with accurate, accessible, and practical guides.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="/start-here/">Start Here</a></li>
+            <li><a href="/send-money/">Send Money</a></li>
+            <li><a href="/tools/">Tools</a></li>
+            <li><a href="/community/">Community</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">Legal &amp; Transparency</div>
+          <ul class="footer-links">
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
+            <li><a href="/terms/">Terms & Disclaimer</a></li>
+            <li><span style="color:var(--text-muted); font-size:0.8rem">contact@sathi-romania.example</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-disclaimers">
+        <p>Affiliate Disclosure: We may receive a small commission when you click certain transfer links. This never impacts the rate you get, what you pay, or our rankings (which are strictly mathematical).</p>
+        <p>Legal Disclaimer: All materials on this portal are for informational and educational purposes only and do not constitute legal, financial, or immigration counsel. Consult official Romanian immigration authorities (IGI) or certified legal experts for individual cases.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sathi Romania. Built with community care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-Side Scripts -->
+  <script>
+    window.__NEWSLETTER_ENDPOINT__ = "";
+    window.__SATHI_ANALYTICS_CONFIG__ = {
+      enabled: false,
+      domain: "sathi-romania.example"
+    };
+  </script>
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>
