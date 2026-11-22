@@ -1,19 +1,123 @@
 /**
- * Sathi Romania — Client-Side Behaviors
- * Handles mobile drawer, language switching, dark/light mode toggle,
- * checklists in localStorage, newsletter subscription, and privacy-friendly analytics.
+ * Sathi Romania (साथी रोमानिया) — Client-Side Behaviors
+ * Warm, accessible, mobile-first companion script.
+ * Handles mobile drawer, thumb navigation bar, quick converter presets,
+ * language switching, dark/light mode toggle, checklists with localStorage,
+ * newsletter subscription, and analytics.
  */
 
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
   initMobileNav();
+  initMobileBottomNav();
   initTheme();
   initLanguageSwitch();
   initChecklists();
+  initQuickPresets();
   initNewsletter();
   initAnalytics();
 });
+
+// ── Mobile Sticky Bottom Action Bar (Thumb Navigation) ────────────────────────
+function initMobileBottomNav() {
+  if (document.querySelector('.sathi-bottom-bar')) return;
+
+  var path = window.location.pathname.toLowerCase();
+  var isNepali = path.indexOf('/ne/') !== -1 || document.documentElement.lang === 'ne';
+
+  // Base URLs
+  var homeUrl = isNepali ? '/ne/' : '/';
+  var startUrl = isNepali ? '/ne/start-here/' : '/start-here/';
+  var sendUrl = isNepali ? '/ne/send-money/' : '/send-money/';
+  var blogUrl = isNepali ? '/ne/blog/' : '/blog/';
+  var communityUrl = isNepali ? '/ne/community/' : '/community/';
+
+  // Tab labels
+  var labels = isNepali ? {
+    home: 'गृह',
+    start: 'सुरुवात',
+    send: 'पैसा',
+    guides: 'गाइड',
+    help: 'मद्दत'
+  } : {
+    home: 'Home',
+    start: 'Start',
+    send: 'Send',
+    guides: 'Guides',
+    help: 'Help'
+  };
+
+  // Determine active tab
+  var isHome = path === '/' || path === '/index.html' || path === '/ne/' || path === '/ne/index.html';
+  var isStart = path.indexOf('/start-here') !== -1;
+  var isSend = path.indexOf('/send-money') !== -1;
+  var isBlog = path.indexOf('/blog') !== -1 || path.indexOf('/guides/') !== -1;
+  var isCommunity = path.indexOf('/community') !== -1;
+
+  var bar = document.createElement('nav');
+  bar.className = 'sathi-bottom-bar';
+  bar.setAttribute('aria-label', isNepali ? 'द्रुत मोबाइल नेभिगेसन' : 'Quick Mobile Navigation');
+
+  bar.innerHTML = [
+    '<a href="' + homeUrl + '" class="sathi-bottom-tab' + (isHome ? ' active' : '') + '">',
+    '  <span class="tab-icon">🏠</span>',
+    '  <span>' + labels.home + '</span>',
+    '</a>',
+    '<a href="' + startUrl + '" class="sathi-bottom-tab' + (isStart ? ' active' : '') + '">',
+    '  <span class="tab-icon">🧳</span>',
+    '  <span>' + labels.start + '</span>',
+    '</a>',
+    '<a href="' + sendUrl + '" class="sathi-bottom-tab' + (isSend ? ' active' : '') + '">',
+    '  <span class="tab-icon">💸</span>',
+    '  <span>' + labels.send + '</span>',
+    '</a>',
+    '<a href="' + blogUrl + '" class="sathi-bottom-tab' + (isBlog ? ' active' : '') + '">',
+    '  <span class="tab-icon">📖</span>',
+    '  <span>' + labels.guides + '</span>',
+    '</a>',
+    '<a href="' + communityUrl + '" class="sathi-bottom-tab' + (isCommunity ? ' active' : '') + '">',
+    '  <span class="tab-icon">🆘</span>',
+    '  <span>' + labels.help + '</span>',
+    '</a>'
+  ].join('\n');
+
+  document.body.appendChild(bar);
+}
+
+// ── Quick Converter Presets ───────────────────────────────────────────────────
+function initQuickPresets() {
+  document.addEventListener('click', function(e) {
+    var btn = e.target.closest('.quick-preset-btn');
+    if (!btn) return;
+    
+    var val = btn.getAttribute('data-val') || btn.textContent.replace(/[^0-9]/g, '');
+    if (!val) return;
+
+    // Check for homepage calc input or comparison amount input
+    var targetInput = document.getElementById('home-calc-ron') ||
+                      document.getElementById('cmp-amount') ||
+                      document.getElementById('conv-input-ron');
+
+    if (targetInput) {
+      targetInput.value = val;
+      // Trigger native input event so calculators update automatically
+      targetInput.dispatchEvent(new Event('input', { bubbles: true }));
+      targetInput.dispatchEvent(new Event('change', { bubbles: true }));
+
+      // Highlight active preset button
+      var parent = btn.parentElement;
+      if (parent) {
+        parent.querySelectorAll('.quick-preset-btn').forEach(function(b) {
+          b.style.background = '';
+          b.style.color = '';
+        });
+        btn.style.background = 'var(--accent)';
+        btn.style.color = '#ffffff';
+      }
+    }
+  });
+}
 
 // ── Mobile Navigation Drawer ──────────────────────────────────────────────────
 function initMobileNav() {
@@ -24,12 +128,18 @@ function initMobileNav() {
   toggle.addEventListener('click', function() {
     var isOpen = drawer.classList.toggle('open');
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
   });
 
   drawer.querySelectorAll('.nav-link').forEach(function(link) {
     link.addEventListener('click', function() {
       drawer.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
     });
   });
 }
@@ -160,12 +270,26 @@ function initChecklists() {
     saved = {};
   }
 
+  function updateItemState(box) {
+    var item = box.closest('.checklist-item');
+    if (!item) return;
+    if (box.checked) {
+      item.style.borderColor = 'var(--up-border)';
+      item.style.background = 'var(--up-light)';
+    } else {
+      item.style.borderColor = '';
+      item.style.background = '';
+    }
+  }
+
   checkboxes.forEach(function(box, idx) {
     if (saved[idx]) {
       box.checked = true;
+      updateItemState(box);
     }
     box.addEventListener('change', function() {
       saved[idx] = box.checked;
+      updateItemState(box);
       try {
         localStorage.setItem(storageKey, JSON.stringify(saved));
       } catch (e) {}
@@ -214,7 +338,7 @@ function initNewsletter() {
           if (!res.ok) throw new Error('HTTP ' + res.status);
         } else {
           // Simulated delay for local testing
-          await new Promise(function(resolve) { setTimeout(resolve, 600); });
+          await new Promise(function(resolve) { setTimeout(resolve, 500); });
         }
 
         if (statusBox) {

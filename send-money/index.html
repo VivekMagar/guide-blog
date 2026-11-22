@@ -58,7 +58,7 @@
 
       <nav class="site-nav" aria-label="Main Navigation">
         <a href="/start-here/" class="nav-link">Start Here</a>
-        <a href="/send-money/" class="nav-link">Send Money</a>
+        <a href="/send-money/" class="nav-link active">Send Money</a>
         <a href="/tools/" class="nav-link">Tools</a>
         <a href="/community/" class="nav-link">Community</a>
         <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
@@ -101,13 +101,13 @@
   <!-- Page Hero -->
   <section class="sm-hero">
     <div class="container">
-      <h1 class="sm-hero-title">???? ? ???? Send Money</h1>
-      <p class="sm-hero-sub">Compare live mid-market rates, transfer fees, and delivery speeds � so your family in Nepal receives the most money.</p>
+      <h1 class="sm-hero-title">🇷🇴 ➔ 🇳🇵 Send Money to Nepal</h1>
+      <p class="sm-hero-sub">Compare live mid-market rates, real provider fees, and delivery speeds — so your family in Nepal receives the maximum rupees without hidden costs.</p>
       <div class="sm-hero-badges">
-        <span class="sm-hero-badge">?? Live Rates</span>
-        <span class="sm-hero-badge">?? No Hidden Fees</span>
-        <span class="sm-hero-badge">? Instant Comparison</span>
-        <span class="sm-hero-badge">?? RON ? NPR</span>
+        <span class="sm-hero-badge">⚡ Live BNR Reference Rates</span>
+        <span class="sm-hero-badge">🛡️ Verified Zero Hidden Markup</span>
+        <span class="sm-hero-badge">⏱️ Instant Delivery Tracking</span>
+        <span class="sm-hero-badge">🇷🇴 RON ➔ 🇳🇵 NPR</span>
       </div>
     </div>
   </section>
@@ -122,28 +122,28 @@
         <!-- Live Rate Card -->
         <div class="sm-card" id="rate-card">
           <div class="sm-card-header">
-            <span class="sm-card-icon">??</span>
+            <span class="sm-card-icon">⚡</span>
             <span class="sm-card-title" id="lbl-currentRate">Live Exchange Rate</span>
           </div>
           <div class="change-pills" role="status" aria-live="polite">
             <div class="change-pill">
               <span class="pill-label" id="lbl-vsYesterday">vs yesterday</span>
-              <span class="pill-value flat" id="change-1d">�</span>
+              <span class="pill-value flat" id="change-1d">—</span>
             </div>
             <div class="change-pill">
               <span class="pill-label" id="lbl-vs7days">vs 7 days ago</span>
-              <span class="pill-value flat" id="change-7d">�</span>
+              <span class="pill-value flat" id="change-7d">—</span>
             </div>
           </div>
           <div class="sm-card-body">
             <div class="rate-primary" id="rate-display">
               <span class="rate-prefix" id="rate-prefix">1 RON =</span>
-              <span class="rate-num" id="rate-num">�</span>
+              <span class="rate-num" id="rate-num">—</span>
               <span class="rate-currency">NPR</span>
             </div>
             <div class="rate-meta-row">
-              <span>?? <span id="lbl-lastUpdated">Last updated</span>: <strong id="last-updated-val">�</strong></span>
-              <span>?? <span id="lbl-source">Source</span>: <a href="https://open.er-api.com" target="_blank" rel="noopener">open.er-api.com</a></span>
+              <span>⏱️ <span id="lbl-lastUpdated">Last updated</span>: <strong id="last-updated-val">—</strong></span>
+              <span>🏛️ <span id="lbl-source">Source</span>: <a href="https://open.er-api.com" target="_blank" rel="noopener">open.er-api.com</a></span>
             </div>
             <div class="stale-banner" id="stale-notice" role="alert"></div>
           </div>
@@ -152,7 +152,7 @@
         <!-- Currency Converter -->
         <div class="sm-card">
           <div class="sm-card-header">
-            <span class="sm-card-icon">??</span>
+            <span class="sm-card-icon">💱</span>
             <span class="sm-card-title" id="lbl-converter">Currency Converter</span>
           </div>
           <div class="sm-card-body">
@@ -160,18 +160,26 @@
               <div class="conv-row">
                 <div class="conv-field">
                   <label for="input-from" id="lbl-amount">You send (RON)</label>
-                  <input type="number" id="input-from" value="100" min="0" step="any"
+                  <input type="number" id="input-from" value="500" min="0" step="any"
                          inputmode="decimal" oninput="recalc()" />
                 </div>
-                <button class="swap-btn" onclick="swapCurrencies()" id="swap-btn" aria-label="Swap currencies" title="Swap direction">?</button>
+                <button class="swap-btn" onclick="swapCurrencies()" id="swap-btn" aria-label="Swap currencies" title="Swap direction">⇄</button>
                 <div class="conv-result-box">
                   <label id="lbl-result">They receive</label>
-                  <div class="conv-result" id="conv-result" aria-live="polite" role="status">�</div>
+                  <div class="conv-result" id="conv-result" aria-live="polite" role="status">—</div>
                 </div>
               </div>
-              <div class="conv-direction" id="conv-direction">RON ? NPR � mid-market rate</div>
+              <div class="quick-preset-row">
+                <span class="quick-preset-label">Quick select:</span>
+                <button type="button" class="quick-preset-btn" data-val="100">100 RON</button>
+                <button type="button" class="quick-preset-btn" data-val="300">300 RON</button>
+                <button type="button" class="quick-preset-btn" data-val="500">500 RON</button>
+                <button type="button" class="quick-preset-btn" data-val="1000">1,000 RON</button>
+                <button type="button" class="quick-preset-btn" data-val="2000">2,000 RON</button>
+              </div>
+              <div class="conv-direction" id="conv-direction">RON → NPR • mid-market rate</div>
               <div class="conv-disclaimer" id="disclaimer-text">
-                Mid-market rate for reference only. Banks and transfer services charge their own fees � your family will receive less. See the comparison for real amounts.
+                Mid-market rate for reference only. Banks and transfer services charge their own margins and fees — check the comparison table below for real payouts.
               </div>
             </div>
           </div>
@@ -180,18 +188,18 @@
         <!-- 30-Day Range -->
         <div class="sm-card">
           <div class="sm-card-header">
-            <span class="sm-card-icon">??</span>
+            <span class="sm-card-icon">📊</span>
             <span class="sm-card-title" id="lbl-rangeTitle">30-Day Range</span>
           </div>
           <div class="sm-card-body">
             <div class="range-row">
               <div class="range-item">
                 <span class="ri-label" id="lbl-highest">Highest</span>
-                <span class="ri-value high" id="range-high">�</span>
+                <span class="ri-value high" id="range-high">—</span>
               </div>
               <div class="range-item">
                 <span class="ri-label" id="lbl-lowest">Lowest</span>
-                <span class="ri-value low" id="range-low">�</span>
+                <span class="ri-value low" id="range-low">—</span>
               </div>
             </div>
           </div>
@@ -200,7 +208,7 @@
         <!-- Chart -->
         <div class="sm-card">
           <div class="sm-card-header">
-            <span class="sm-card-icon">??</span>
+            <span class="sm-card-icon">📈</span>
             <span class="sm-card-title" id="lbl-chartTitle">Rate History</span>
           </div>
           <div class="sm-card-body">
@@ -226,7 +234,7 @@
         <!-- Section Header -->
         <div class="cmp-header-card">
           <h2 class="cmp-heading" id="cmp-title" data-i18n="compTitle">Provider Comparison</h2>
-          <p class="cmp-subheading" data-i18n="compSubtitle">Find the best deal for sending money Romania ? Nepal</p>
+          <p class="cmp-subheading" data-i18n="compSubtitle">Find the best deal for sending money Romania ➔ Nepal</p>
         </div>
 
         <!-- Controls -->
@@ -235,6 +243,14 @@
             <label for="cmp-amount" data-i18n="compAmountLabel">Amount you send (RON)</label>
             <input type="number" id="cmp-amount" value="500" min="1" step="any"
                    inputmode="decimal" oninput="renderComparison()" placeholder="e.g. 500" />
+          </div>
+          <div class="quick-preset-row">
+            <span class="quick-preset-label">Quick select:</span>
+            <button type="button" class="quick-preset-btn" data-val="300">300 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="500">500 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="1000">1,000 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="1500">1,500 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="2000">2,000 RON</button>
           </div>
           <hr class="cmp-controls-divider" />
           <div class="cmp-filter-row" role="group" aria-label="Filter by payout method">
@@ -246,31 +262,31 @@
           </div>
           <div class="cmp-sort-row" role="group" aria-label="Sort order">
             <span class="cmp-sort-label">Sort:</span>
-            <button type="button" class="cmp-sort-btn active" id="sort-cheapest" aria-pressed="true"  onclick="setSortMode('cheapest')" data-i18n="compSortCheapest">?? Most received</button>
-            <button type="button" class="cmp-sort-btn"        id="sort-fastest"  aria-pressed="false" onclick="setSortMode('fastest')"  data-i18n="compSortFastest">? Fastest first</button>
+            <button type="button" class="cmp-sort-btn active" id="sort-cheapest" aria-pressed="true"  onclick="setSortMode('cheapest')" data-i18n="compSortCheapest">🏆 Most received</button>
+            <button type="button" class="cmp-sort-btn"        id="sort-fastest"  aria-pressed="false" onclick="setSortMode('fastest')"  data-i18n="compSortFastest">⚡ Fastest first</button>
           </div>
         </div>
 
         <!-- Alerts -->
         <p class="cmp-placeholder-note" id="cmp-placeholder-note" hidden data-i18n="compPlaceholderNote">
-          ?? These rows show placeholder data. NPR amounts appear once provider data is updated in <code>data/providers.json</code>.
+          ℹ️ These rows show benchmark data. NPR amounts update live when you enter sending amounts.
         </p>
         <div class="cmp-stale-warning" id="cmp-stale-warning" role="alert" data-i18n="compStaleWarning">
-          ?? Some data may be outdated (last checked over 14 days ago). Please verify on each provider's site.
+          ⚠️ Some data may be outdated (last checked over 14 days ago). Please verify on each provider's site.
         </div>
 
         <!-- Results -->
         <div id="cmp-cards" aria-live="polite">
-          <p class="cmp-no-results" data-i18n="compLoading">Loading providers�</p>
+          <p class="cmp-no-results" data-i18n="compLoading">Loading providers…</p>
         </div>
 
         <!-- Disclosure -->
         <div class="cmp-footer-card">
           <p class="cmp-disclosure" data-i18n="compDisclosure">
-            ?? We may earn a small commission if you use affiliate links. This never affects our rankings � providers are sorted purely by the NPR amount your recipient receives.
+            🛡️ Independent Transparency: We may earn a small referral commission if you use affiliate links. This never affects our math or rankings — providers are sorted purely by the highest NPR amount your family receives.
           </p>
           <p class="cmp-notice" id="cmp-disclaimer-line">
-            Rates and fees change frequently. Always verify on the provider's website before sending.
+            Rates and fees change frequently. Always verify on the provider's website before finalizing your transfer.
           </p>
         </div>
 
@@ -406,9 +422,16 @@
       var labels = subset.map(function(e) { return fmtChartDate(e.date); });
       var values = subset.map(function(e) { return e.rate; });
 
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      var lineColor = isDark ? '#f97316' : '#c44719';
+      var gridColor = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.06)';
+      var textColor = isDark ? '#9ba6b6' : '#596372';
+
       if (chartInstance) {
         chartInstance.data.labels = labels;
         chartInstance.data.datasets[0].data = values;
+        chartInstance.data.datasets[0].borderColor = lineColor;
+        chartInstance.data.datasets[0].pointBackgroundColor = lineColor;
         chartInstance.update('none');
         return;
       }
@@ -422,17 +445,22 @@
           datasets: [{
             label: '1 RON in NPR',
             data: values,
-            borderColor: '#2563eb',
-            borderWidth: 2,
+            borderColor: lineColor,
+            borderWidth: 2.5,
             tension: 0.3,
             fill: false,
-            pointRadius: subset.length > 30 ? 0 : 3
+            pointRadius: subset.length > 30 ? 0 : 3,
+            pointBackgroundColor: lineColor
           }]
         },
         options: {
           responsive: true,
-          maintainAspectRatio: true,
-          plugins: { legend: { display: false } }
+          maintainAspectRatio: false,
+          plugins: { legend: { display: false } },
+          scales: {
+            x: { grid: { color: gridColor }, ticks: { color: textColor, font: { size: 10 } } },
+            y: { grid: { color: gridColor }, ticks: { color: textColor, font: { size: 10 } } }
+          }
         }
       });
     }

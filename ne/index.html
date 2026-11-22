@@ -139,35 +139,46 @@
       <div class="widget-embed-frame">
         <!-- Embedded Rate Card & Converter from our widget -->
         <div class="card" style="margin-bottom:1rem;">
-          <div class="rate-label" style="font-size:0.78rem; font-weight:700; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.35rem">Current Mid-Market Rate</div>
-          <div class="rate-value" style="font-size:2.3rem; font-weight:800; color:var(--text); line-height:1">
-            <span>1 RON = </span>
+          <div class="rate-label" style="font-size:0.78rem; font-weight:800; text-transform:uppercase; color:var(--text-muted); margin-bottom:0.35rem">हालको मध्य-बजार विनिमय दर (BNR)</div>
+          <div class="rate-value" style="font-size:2.35rem; font-weight:900; color:var(--text); line-height:1">
+            <span>१ RON = </span>
             <span id="home-rate-val">31.16</span>
             <span style="font-size:1.1rem; color:var(--text-muted)"> NPR</span>
           </div>
           <div style="font-size:0.75rem; color:var(--text-muted); margin-top:0.5rem">
-            Updated twice daily from open.er-api.com • Reference rate only
+            दिनमा दुई पटक open.er-api.com बाट अपडेट हुने • सन्दर्भ दर मात्र
           </div>
         </div>
 
         <div class="card">
-          <div style="font-size:0.9rem; font-weight:700; margin-bottom:0.75rem">Quick Converter</div>
+          <div style="font-size:0.95rem; font-weight:800; margin-bottom:0.75rem; display:flex; align-items:center; gap:0.4rem;">
+            <span>💱</span>
+            <span>तत्काल क्यालकुलेटर (RON → NPR)</span>
+          </div>
           <div style="display:flex; gap:0.5rem; align-items:center;">
             <div style="flex:1">
-              <label for="home-calc-ron" style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase;">RON Amount</label>
-              <input type="number" id="home-calc-ron" value="500" class="newsletter-input" style="width:100%; font-size:1.1rem; font-weight:700;" />
+              <label for="home-calc-ron" style="font-size:0.75rem; font-weight:800; color:var(--text-label); text-transform:uppercase; letter-spacing:0.04em;">पठाउने रकम (RON)</label>
+              <input type="number" id="home-calc-ron" value="500" class="newsletter-input" style="width:100%; font-size:1.15rem; font-weight:800;" />
             </div>
-            <div style="font-size:1.3rem; color:var(--text-muted); padding-top:1.2rem;">→</div>
+            <div style="font-size:1.4rem; color:var(--accent); padding-top:1.2rem; font-weight:700;">➔</div>
             <div style="flex:1">
-              <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); text-transform:uppercase; display:block;">Recipient Gets (NPR)</span>
-              <div id="home-calc-res" style="background:var(--bg-input); padding:0.65rem 0.8rem; border-radius:var(--radius-sm); font-size:1.15rem; font-weight:800; border:1px solid var(--border); min-height:48px; display:flex; align-items:center;">
+              <span style="font-size:0.75rem; font-weight:800; color:var(--text-label); text-transform:uppercase; letter-spacing:0.04em; display:block;">नेपालमा पाउने (NPR)</span>
+              <div id="home-calc-res" style="background:var(--bg-card-subtle); padding:0.65rem 0.8rem; border-radius:var(--radius-sm); font-size:1.2rem; font-weight:900; color:var(--up); border:1.5px solid var(--border); min-height:50px; display:flex; align-items:center;">
                 15,582 NPR
               </div>
             </div>
           </div>
-          <div style="margin-top:1rem; text-align:center;">
+          <div class="quick-preset-row">
+            <span class="quick-preset-label">लोकप्रिय रकम:</span>
+            <button type="button" class="quick-preset-btn" data-val="100">100 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="300">300 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="500">500 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="1000">1,000 RON</button>
+            <button type="button" class="quick-preset-btn" data-val="2000">2,000 RON</button>
+          </div>
+          <div style="margin-top:1.15rem; text-align:center;">
             <a href="/ne/send-money/" class="btn btn-secondary" style="width:100%">
-              Compare Transfer Fees & Real Payouts →
+              सबै प्रदायकहरूको वास्तविक शुल्क तुलना गर्नुहोस् →
             </a>
           </div>
         </div>
