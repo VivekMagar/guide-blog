@@ -353,99 +353,6 @@
     </div>
   </section>
 
-  <!-- Community Experiences -->
-  <section class="community-experience-section" id="worker-experiences">
-    <div class="container">
-      <div class="community-experience-header">
-        <h2 class="section-title">Experience of Nepali Workers (Community)</h2>
-        <p class="section-sub">Practical lessons shared by members of the Nepalese community in Romania. Individual experiences differ, so always verify decisions with official sources.</p>
-      </div>
-      <div class="community-experience-grid">
-        <article class="community-experience-card">
-          <div class="community-experience-meta">
-            <span class="community-experience-icon" aria-hidden="true">📄</span>
-            <span class="community-experience-tag">Before Arrival</span>
-          </div>
-          <h3>Keep every document clearly organised</h3>
-          <p><strong>Community lesson:</strong> Store copies of the employment contract, work permit, visa, insurance details, passport, and payment receipts in both digital and printed form. Confirm the employer and agency details before traveling.</p>
-        </article>
-        <article class="community-experience-card">
-          <div class="community-experience-meta">
-            <span class="community-experience-icon" aria-hidden="true">💳</span>
-            <span class="community-experience-tag">Salary &amp; Rights</span>
-          </div>
-          <h3>Review each payslip carefully</h3>
-          <p><strong>Community lesson:</strong> Check the gross salary, deductions, overtime hours, accommodation costs, and net amount every month. Ask the employer for a written explanation of any unexpected deduction.</p>
-        </article>
-        <article class="community-experience-card">
-          <div class="community-experience-meta">
-            <span class="community-experience-icon" aria-hidden="true">🏠</span>
-            <span class="community-experience-tag">Life in Romania</span>
-          </div>
-          <h3>Plan the first week and build local support</h3>
-          <p><strong>Community lesson:</strong> Arrange a Romanian SIM, bank account, accommodation, transport, and family doctor registration early. Keep the contact details of trusted Nepali community groups and official local services nearby.</p>
-        </article>
-      </div>
-
-      <div class="community-experience-panel">
-        <form class="community-share-card" id="community-share-form">
-          <h3>Share your experience</h3>
-          <div class="community-share-fields">
-            <label>
-              <span class="sr-only">Your name</span>
-              <input type="text" id="community-name" class="newsletter-input" placeholder="Your name (optional)" maxlength="50" />
-            </label>
-            <label>
-              <span class="sr-only">City in Romania</span>
-              <input type="text" id="community-city" class="newsletter-input" placeholder="City (e.g. Bucharest)" maxlength="50" />
-            </label>
-          </div>
-          <label>
-            <span class="sr-only">Your experience</span>
-            <textarea id="community-text" class="newsletter-input" placeholder="Share a practical tip or workplace experience..." maxlength="500" required></textarea>
-          </label>
-          <div class="community-share-actions">
-            <label>
-              <span class="sr-only">Rating</span>
-              <select id="community-rating" class="newsletter-input" aria-label="Experience rating">
-                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                <option value="4">⭐⭐⭐⭐ Good</option>
-                <option value="3">⭐⭐⭐ Average</option>
-                <option value="2">⭐⭐ Difficult</option>
-                <option value="1">⭐ Very difficult</option>
-              </select>
-            </label>
-            <button type="submit" class="btn btn-primary">Post experience</button>
-          </div>
-          <p class="community-share-status" id="community-share-status" role="status"></p>
-        </form>
-
-        <div class="community-stories-card">
-          <h3>Community stories</h3>
-          <div class="community-stories-list" id="community-stories-list">
-            <article class="community-story">
-              <div class="community-story-header"><span>Bikash · Bucharest</span><span>★★★★★</span></div>
-              <p>Keeping a photocopy of the contract and payslip helped me resolve a deduction question quickly with the employer.</p>
-            </article>
-            <article class="community-story">
-              <div class="community-story-header"><span>Anonymous · Cluj-Napoca</span><span>★★★★☆</span></div>
-              <p>Opening a Romanian bank account early made monthly salary payments and family transfers much easier.</p>
-            </article>
-            <article class="community-story">
-              <div class="community-story-header"><span>Sabina · Brașov</span><span>★★★★★</span></div>
-              <p>Joining a trusted local community group helped me find reliable transport and understand office procedures.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-
-      <div class="community-experience-footer">
-        <p class="community-experience-note">Community summaries are for general guidance only and do not represent guaranteed outcomes or legal advice.</p>
-        <a href="/community/" class="btn btn-secondary">Visit the Community →</a>
-      </div>
-    </div>
-  </section>
-
   <!-- Salary Calculator -->
   <section class="salary-calculator-section">
     <div class="container">
@@ -1249,47 +1156,142 @@
   </script>
 
   <script>
-    (function () {
-      var form = document.getElementById('community-share-form');
-      if (!form) return;
+    document.addEventListener('DOMContentLoaded', function () {
+      (function () {
+        var form = document.getElementById('community-share-form');
+        if (!form) return;
 
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        var name = document.getElementById('community-name').value.trim() || 'Anonymous';
-        var city = document.getElementById('community-city').value.trim() || 'Romania';
-        var text = document.getElementById('community-text').value.trim();
-        var rating = parseInt(document.getElementById('community-rating').value, 10) || 5;
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var name = document.getElementById('community-name').value.trim() || 'Anonymous';
+          var city = document.getElementById('community-city').value.trim() || 'Romania';
+          var text = document.getElementById('community-text').value.trim();
+          var rating = parseInt(document.getElementById('community-rating').value, 10) || 5;
 
-        if (!text) {
-          document.getElementById('community-share-status').textContent = 'Please write your experience before posting.';
-          return;
-        }
+          if (!text) {
+            document.getElementById('community-share-status').textContent = 'Please write your experience before posting.';
+            return;
+          }
 
-        var stars = '★★★★★'.slice(0, rating) + '☆☆☆☆☆'.slice(0, 5 - rating);
-        var article = document.createElement('article');
-        article.className = 'community-story';
+          var stars = '★★★★★'.slice(0, rating) + '☆☆☆☆☆'.slice(0, 5 - rating);
+          var article = document.createElement('article');
+          article.className = 'community-story';
 
-        var header = document.createElement('div');
-        header.className = 'community-story-header';
-        var person = document.createElement('span');
-        person.textContent = name + ' · ' + city;
-        var score = document.createElement('span');
-        score.textContent = stars;
-        header.appendChild(person);
-        header.appendChild(score);
+          var header = document.createElement('div');
+          header.className = 'community-story-header';
+          var person = document.createElement('span');
+          person.textContent = name + ' · ' + city;
+          var score = document.createElement('span');
+          score.textContent = stars;
+          header.appendChild(person);
+          header.appendChild(score);
 
-        var message = document.createElement('p');
-        message.textContent = text;
-        article.appendChild(header);
-        article.appendChild(message);
+          var message = document.createElement('p');
+          message.textContent = text;
+          article.appendChild(header);
+          article.appendChild(message);
 
-        var list = document.getElementById('community-stories-list');
-        list.insertBefore(article, list.firstChild);
-        form.reset();
-        document.getElementById('community-share-status').textContent = 'Thank you. Your experience has been added to this page.';
+          var list = document.getElementById('community-stories-list');
+          list.insertBefore(article, list.firstChild);
+          form.reset();
+          document.getElementById('community-share-status').textContent = 'Thank you. Your experience has been added to this page.';
+        });
       });
-    })();
+    });
   </script>
+
+  <!-- Community Experiences -->
+  <section class="community-experience-section" id="worker-experiences">
+    <div class="container">
+      <div class="community-experience-header">
+        <h2 class="section-title">Experience of Nepali Workers (Community)</h2>
+        <p class="section-sub">Practical lessons shared by members of the Nepalese community in Romania. Individual experiences differ, so always verify decisions with official sources.</p>
+      </div>
+      <div class="community-experience-grid">
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">📄</span>
+            <span class="community-experience-tag">Before Arrival</span>
+          </div>
+          <h3>Keep every document clearly organised</h3>
+          <p><strong>Community lesson:</strong> Store copies of the employment contract, work permit, visa, insurance details, passport, and payment receipts in both digital and printed form. Confirm the employer and agency details before traveling.</p>
+        </article>
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">💳</span>
+            <span class="community-experience-tag">Salary &amp; Rights</span>
+          </div>
+          <h3>Review each payslip carefully</h3>
+          <p><strong>Community lesson:</strong> Check the gross salary, deductions, overtime hours, accommodation costs, and net amount every month. Ask the employer for a written explanation of any unexpected deduction.</p>
+        </article>
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">🏠</span>
+            <span class="community-experience-tag">Life in Romania</span>
+          </div>
+          <h3>Plan the first week and build local support</h3>
+          <p><strong>Community lesson:</strong> Arrange a Romanian SIM, bank account, accommodation, transport, and family doctor registration early. Keep the contact details of trusted Nepali community groups and official local services nearby.</p>
+        </article>
+      </div>
+
+      <div class="community-experience-panel">
+        <form class="community-share-card" id="community-share-form">
+          <h3>Share your experience</h3>
+          <div class="community-share-fields">
+            <label>
+              <span class="sr-only">Your name</span>
+              <input type="text" id="community-name" class="newsletter-input" placeholder="Your name (optional)" maxlength="50" />
+            </label>
+            <label>
+              <span class="sr-only">City in Romania</span>
+              <input type="text" id="community-city" class="newsletter-input" placeholder="City (e.g. Bucharest)" maxlength="50" />
+            </label>
+          </div>
+          <label>
+            <span class="sr-only">Your experience</span>
+            <textarea id="community-text" class="newsletter-input" placeholder="Share a practical tip or workplace experience..." maxlength="500" required></textarea>
+          </label>
+          <div class="community-share-actions">
+            <label>
+              <span class="sr-only">Rating</span>
+              <select id="community-rating" class="newsletter-input" aria-label="Experience rating">
+                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="4">⭐⭐⭐⭐ Good</option>
+                <option value="3">⭐⭐⭐ Average</option>
+                <option value="2">⭐⭐ Difficult</option>
+                <option value="1">⭐ Very difficult</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Post experience</button>
+          </div>
+          <p class="community-share-status" id="community-share-status" role="status"></p>
+        </form>
+
+        <div class="community-stories-card">
+          <h3>Community stories</h3>
+          <div class="community-stories-list" id="community-stories-list">
+            <article class="community-story">
+              <div class="community-story-header"><span>Bikash · Bucharest</span><span>★★★★★</span></div>
+              <p>Keeping a photocopy of the contract and payslip helped me resolve a deduction question quickly with the employer.</p>
+            </article>
+            <article class="community-story">
+              <div class="community-story-header"><span>Anonymous · Cluj-Napoca</span><span>★★★★☆</span></div>
+              <p>Opening a Romanian bank account early made monthly salary payments and family transfers much easier.</p>
+            </article>
+            <article class="community-story">
+              <div class="community-story-header"><span>Sabina · Brașov</span><span>★★★★★</span></div>
+              <p>Joining a trusted local community group helped me find reliable transport and understand office procedures.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="community-experience-footer">
+        <p class="community-experience-note">Community summaries are for general guidance only and do not represent guaranteed outcomes or legal advice.</p>
+        <a href="/community/" class="btn btn-secondary">Visit the Community →</a>
+      </div>
+    </div>
+  </section>
   </main>
 
   <!-- Footer -->
