@@ -43,6 +43,167 @@
 
   <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Sathi Romania","url":"https://sathi-romania.example","description":"The independent guide and community for Nepalese workers in Romania","inLanguage":["en","ne"]}</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the typical net take-home salary for Nepali workers in Romania?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unskilled labor: 2,600 to 3,500 RON/month (~NPR 80,000–108,000). Skilled labor: 4,000 to 5,200+ RON/month (~NPR 125,000–160,000). Regular overtime and free employer accommodation increase net monthly savings."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the legal overtime pay rate under Romanian labor law?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Weekday overtime is legally compensated at a minimum of +75%. Weekend and Romanian public holiday overtime is legally compensated at +100% (double pay), capped at 8 hours per week."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much tax and social security is deducted from my Romanian salary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Mandatory deductions include CAS 25% (pension), CASS 10% (health insurance), and PIT 10% (income tax), with a 300 RON tax-free allowance for minimum-wage earners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much recruitment fee is legal to pay an agency to go to Romania?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Legitimate processing costs in Nepal typically range between NPR 2,00,000 and 3,50,000. Demands exceeding 5 to 8 Lakhs or advance cash without a DOFE Lot (LT) Number are fraudulent."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the entire Romania work visa process take from Nepal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The entire legal process typically takes 4 to 6 months across 4 stages: Work Permit (Aviz de Muncă), online D/AM visa application, biometrics in New Delhi, and DOFE labor permit approval."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .community-experience-section {
+      padding: 3.25rem 0;
+      border-top: 1px solid var(--border-subtle);
+      background: linear-gradient(135deg, var(--brand-light) 0%, var(--bg-card-subtle) 100%);
+    }
+    .community-experience-header {
+      max-width: 720px;
+      margin: 0 auto 1.75rem;
+      text-align: center;
+    }
+    .community-experience-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+    }
+    .community-experience-card {
+      position: relative;
+      overflow: hidden;
+      min-width: 0;
+      padding: 1.35rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+    }
+    .community-experience-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+    }
+    .community-experience-card:nth-child(2)::before { background: var(--up); }
+    .community-experience-card:nth-child(3)::before { background: var(--saffron); }
+    .community-experience-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 0.75rem;
+    }
+    .community-experience-icon {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      flex: 0 0 38px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      font-size: 1.1rem;
+    }
+    .community-experience-card:nth-child(2) .community-experience-icon {
+      background: var(--up-light);
+    }
+    .community-experience-card:nth-child(3) .community-experience-icon {
+      background: var(--saffron-light);
+    }
+    .community-experience-tag {
+      color: var(--accent);
+      font-size: 0.74rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .community-experience-card:nth-child(2) .community-experience-tag { color: var(--up); }
+    .community-experience-card:nth-child(3) .community-experience-tag { color: var(--saffron); }
+    .community-experience-card h3 {
+      margin: 0 0 0.5rem;
+      color: var(--text);
+      font-size: 1.05rem;
+      line-height: 1.35;
+    }
+    .community-experience-card p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+    .community-experience-card p strong {
+      color: var(--text);
+    }
+    .community-experience-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.85rem;
+      margin-top: 1.35rem;
+      text-align: center;
+    }
+    .community-experience-note {
+      max-width: 760px;
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      line-height: 1.55;
+    }
+    @media (min-width: 768px) {
+      .community-experience-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .community-experience-card {
+        padding: 1.5rem;
+      }
+      .community-experience-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 <body data-slug="home">
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -60,7 +221,7 @@
         <a href="/start-here/" class="nav-link">Start Here</a>
         <a href="/send-money/" class="nav-link">Send Money</a>
         <a href="/tools/" class="nav-link">Tools</a>
-        <a href="/community/" class="nav-link">Community</a>
+        <a href="#worker-experiences" class="nav-link">Community</a>
         <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
       </nav>
 
@@ -91,7 +252,7 @@
     <a href="/start-here/" class="nav-link">Start Here</a>
     <a href="/send-money/" class="nav-link">Send Money</a>
     <a href="/tools/" class="nav-link">Tools</a>
-    <a href="/community/" class="nav-link">Community</a>
+    <a href="#worker-experiences" class="nav-link">Community</a>
     <a href="/blog/" class="nav-link">Guides &amp; Blog</a>
   </div>
 
@@ -106,6 +267,552 @@
     <div class="hero-actions">
       <a href="/start-here/" class="btn btn-primary">Start with Newcomer Guide</a>
       <a href="/send-money/" class="btn btn-secondary">Check Transfer Rates</a>
+    </div>
+  </section>
+
+  <!-- Community Experiences -->
+  <section class="community-experience-section" id="worker-experiences">
+    <div class="container">
+      <div class="community-experience-header">
+        <h2 class="section-title">Experience of Nepali Workers (Community)</h2>
+        <p class="section-sub">Practical lessons shared by members of the Nepalese community in Romania. Individual experiences differ, so always verify decisions with official sources.</p>
+      </div>
+      <div class="community-experience-grid">
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">📄</span>
+            <span class="community-experience-tag">Before Arrival</span>
+          </div>
+          <h3>Keep every document clearly organised</h3>
+          <p><strong>Community lesson:</strong> Store copies of the employment contract, work permit, visa, insurance details, passport, and payment receipts in both digital and printed form. Confirm the employer and agency details before traveling.</p>
+        </article>
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">💳</span>
+            <span class="community-experience-tag">Salary &amp; Rights</span>
+          </div>
+          <h3>Review each payslip carefully</h3>
+          <p><strong>Community lesson:</strong> Check the gross salary, deductions, overtime hours, accommodation costs, and net amount every month. Ask the employer for a written explanation of any unexpected deduction.</p>
+        </article>
+        <article class="community-experience-card">
+          <div class="community-experience-meta">
+            <span class="community-experience-icon" aria-hidden="true">🏠</span>
+            <span class="community-experience-tag">Life in Romania</span>
+          </div>
+          <h3>Plan the first week and build local support</h3>
+          <p><strong>Community lesson:</strong> Arrange a Romanian SIM, bank account, accommodation, transport, and family doctor registration early. Keep the contact details of trusted Nepali community groups and official local services nearby.</p>
+        </article>
+      </div>
+      <div class="community-experience-footer">
+        <p class="community-experience-note">Community summaries are for general guidance only and do not represent guaranteed outcomes or legal advice.</p>
+        <a href="/community/" class="btn btn-secondary">Visit the Community →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Salary Calculator -->
+  <section class="salary-calculator-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Step 1: Calculate Your Salary</h2>
+        <p class="section-sub">Estimate monthly take-home pay, overtime, and the value of benefits in your offer.</p>
+      </div>
+
+      <div class="salary-calculator card" id="salary-calculator">
+        <div class="salary-inputs">
+          <div class="salary-subsection">
+            <h3>Offer details</h3>
+            <div class="salary-field">
+              <label for="salary-gross">Monthly gross salary (RON)</label>
+              <input id="salary-gross" type="number" min="0" step="50" value="4325" class="newsletter-input" inputmode="decimal" />
+              <small>Reference minimum used: 4,325 RON (July 2026). Check the current legal minimum before relying on this estimate.</small>
+            </div>
+            <div class="salary-field">
+              <label for="salary-dependents">Dependants</label>
+              <select id="salary-dependents" class="newsletter-input">
+                <option value="0">None</option>
+                <option value="1">1 dependant</option>
+                <option value="2">2 dependants</option>
+                <option value="3">3 dependants</option>
+                <option value="4">4 or more</option>
+              </select>
+            </div>
+            <p class="salary-warning" id="salary-minimum-warning" role="status" hidden></p>
+          </div>
+
+          <fieldset class="salary-subsection salary-benefits">
+            <legend>Benefits provided by the employer</legend>
+            <label class="salary-toggle"><input type="checkbox" data-benefit="800" /> <span>🍽️ Meals</span><strong>~800 RON</strong></label>
+            <label class="salary-toggle"><input type="checkbox" data-benefit="1200" /> <span>🏠 Accommodation</span><strong>~1,200 RON</strong></label>
+            <label class="salary-toggle"><input type="checkbox" data-benefit="150" /> <span>🚌 Transport</span><strong>~150 RON</strong></label>
+            <label class="salary-toggle"><input type="checkbox" data-benefit="200" /> <span>🏥 Health insurance</span><strong>~200 RON</strong></label>
+            <label class="salary-toggle"><input type="checkbox" data-benefit="300" /> <span>🎫 Meal vouchers</span><strong>~300 RON</strong></label>
+            <label class="salary-toggle"><input type="checkbox" id="salary-thirteenth" /> <span>🎁 13th-month salary</span><strong>Monthly equivalent</strong></label>
+          </fieldset>
+
+          <div class="salary-subsection salary-overtime">
+            <h3>⏰ Overtime estimate</h3>
+            <div class="salary-overtime-fields">
+              <div class="salary-field">
+                <label for="salary-regular-ot">Regular overtime (hours/week)</label>
+                <input id="salary-regular-ot" type="number" min="0" max="8" step="1" value="0" class="newsletter-input" inputmode="numeric" />
+                <small>Estimated at +75%</small>
+              </div>
+              <div class="salary-field">
+                <label for="salary-weekend-ot">Weekend/holiday (hours/week)</label>
+                <input id="salary-weekend-ot" type="number" min="0" max="8" step="1" value="0" class="newsletter-input" inputmode="numeric" />
+                <small>Estimated at +100%</small>
+              </div>
+            </div>
+            <p class="salary-note">The estimate caps combined overtime at 8 hours per week. Confirm applicable overtime rules and pay with your employer.</p>
+          </div>
+        </div>
+
+        <div class="salary-results">
+          <section class="salary-subsection" aria-labelledby="salary-overtime-title">
+            <h3 id="salary-overtime-title">Overtime pay</h3>
+            <dl class="salary-breakdown">
+              <div><dt>Base hourly rate</dt><dd id="salary-hourly">0 RON</dd></div>
+              <div><dt>Overtime gross extra</dt><dd id="salary-overtime-gross">+ 0 RON</dd></div>
+              <div><dt>Overtime net extra</dt><dd id="salary-overtime-net">+ 0 RON</dd></div>
+            </dl>
+          </section>
+
+          <section class="salary-subsection" aria-labelledby="salary-breakdown-title">
+            <h3 id="salary-breakdown-title">Estimated salary breakdown</h3>
+            <dl class="salary-breakdown">
+              <div><dt>Base gross salary</dt><dd id="salary-base-row">0 RON</dd></div>
+              <div><dt>Overtime gross</dt><dd id="salary-overtime-row">+ 0 RON</dd></div>
+              <div class="salary-breakdown-total"><dt>Total gross</dt><dd id="salary-total-gross">0 RON</dd></div>
+              <div><dt>Tax-free allowance from tax base</dt><dd id="salary-relief">− 0 RON</dd></div>
+              <div><dt>CAS — pension (25%)</dt><dd id="salary-cas">− 0 RON</dd></div>
+              <div><dt>CASS — health (10%)</dt><dd id="salary-cass">− 0 RON</dd></div>
+              <div><dt>Personal deduction (estimate)</dt><dd id="salary-personal-deduction">− 0 RON</dd></div>
+              <div><dt>PIT — income tax (10%)</dt><dd id="salary-pit">− 0 RON</dd></div>
+              <div class="salary-breakdown-total salary-net"><dt>Estimated net take-home</dt><dd id="salary-net">0 RON</dd></div>
+            </dl>
+            <p class="salary-note">Illustrative estimate only; individual tax status, benefit treatment, and current Romanian rules may change the result.</p>
+          </section>
+
+          <section class="salary-total-value" aria-live="polite">
+            <h3>💰 Monthly value including benefits</h3>
+            <div class="salary-value-row"><span>Estimated net salary</span><strong id="salary-value-net">0 RON</strong></div>
+            <div class="salary-value-row"><span>Selected benefits</span><strong id="salary-benefit-value">+ 0 RON</strong></div>
+            <div class="salary-value-grand"><span>Total monthly value</span><strong id="salary-value-total">0 RON</strong></div>
+            <p>Approximate equivalents: <strong id="salary-value-npr">रु. 0</strong> · <strong id="salary-value-eur">€0</strong> (EUR estimated at 5 RON)</p>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 1: Job Demands & Salaries in Romania -->
+  <section class="job-demand-section" id="job-demands">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">💼 What Job Demands and Salaries in Romania?</h2>
+        <p class="section-sub">Verified salary benchmarks, market demand levels, and typical employer benefits for Nepalese workers across Romania.</p>
+      </div>
+
+      <div class="demand-table-wrap">
+        <table class="demand-table">
+          <thead>
+            <tr>
+              <th>Job Category</th>
+              <th>Avg Monthly Gross</th>
+              <th>Est. Take-Home (Net)</th>
+              <th>In Nepali Rupees (NPR)</th>
+              <th>Market Demand</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="job-role-title">🏗️ Construction &amp; Infrastructure</div>
+                <div class="job-role-sub">Masons, Carpenters, Steel Fixers, Electricians &amp; General Labor</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">€700 – €900</div>
+                <div class="job-role-sub">3,500 – 4,500 RON</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">2,800 – 3,600 RON</div>
+                <div class="job-role-sub">+ regular overtime available</div>
+              </td>
+              <td>
+                <div class="salary-range-sub">रु. १,०५,००० – १,३५,०००</div>
+              </td>
+              <td>
+                <span class="demand-badge high">⚡ High Demand</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="job-role-title">🏭 Factory Worker &amp; Packaging</div>
+                <div class="job-role-sub">Food Processing, Electronics, Automotive Parts &amp; Garments</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">€650 – €800</div>
+                <div class="job-role-sub">3,250 – 4,000 RON</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">2,600 – 3,200 RON</div>
+                <div class="job-role-sub">+ shift bonuses &amp; food vouchers</div>
+              </td>
+              <td>
+                <div class="salary-range-sub">रु. ९७,००० – १,२०,०००</div>
+              </td>
+              <td>
+                <span class="demand-badge very-high">🔥 Very High Demand</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="job-role-title">📦 Warehouse &amp; Logistics</div>
+                <div class="job-role-sub">Order Pickers, Sorters, Forklift Drivers (eMAG, Mega Image, Lidl)</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">€700 – €850</div>
+                <div class="job-role-sub">3,500 – 4,250 RON</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">2,800 – 3,400 RON</div>
+                <div class="job-role-sub">+ overtime (+75% to +100%)</div>
+              </td>
+              <td>
+                <div class="salary-range-sub">रु. १,०५,००० – १,२७,५००</div>
+              </td>
+              <td>
+                <span class="demand-badge very-high">🔥 Very High Demand</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="job-role-title">🚚 Delivery &amp; Couriers</div>
+                <div class="job-role-sub">Food Delivery (Glovo, Tazz, Bolt) &amp; Commercial Drivers</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">€800 – €1,100</div>
+                <div class="job-role-sub">4,000 – 5,500 RON</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">3,200 – 4,400 RON</div>
+                <div class="job-role-sub">+ customer tips &amp; performance pay</div>
+              </td>
+              <td>
+                <div class="salary-range-sub">रु. १,२०,००० – १,६५,०००</div>
+              </td>
+              <td>
+                <span class="demand-badge mod">📈 Moderate Demand</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="job-role-title">🏨 Hospitality &amp; Cleaning</div>
+                <div class="job-role-sub">Kitchen Helpers, Dishwashers, Hotel Housekeeping &amp; Janitorial</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">€600 – €750</div>
+                <div class="job-role-sub">3,000 – 3,750 RON</div>
+              </td>
+              <td>
+                <div class="salary-range-primary">2,400 – 3,000 RON</div>
+                <div class="job-role-sub">+ free meals on duty &amp; tips</div>
+              </td>
+              <td>
+                <div class="salary-range-sub">रु. ९०,००० – १,१२,०००</div>
+              </td>
+              <td>
+                <span class="demand-badge high">⚡ High Demand</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top:1rem; font-size:0.82rem; color:var(--text-muted); line-height:1.6;">
+        ℹ️ <em>Note on legal minimum wage:</em> Under Romanian labour law (as of July 2026), the national statutory minimum gross wage is <strong>4,325 RON</strong> for full-time work (168 hrs/mo). Overtime hours are legally compensated with at least <strong>+75% on weekdays</strong> and <strong>+100% on weekends/public holidays</strong>.
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 2: How to Find a Job in Romania -->
+  <section class="job-portals-section" id="find-job">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">🔍 How to Find a Job in Romania?</h2>
+        <p class="section-sub">Verified Romanian employment platforms, official European portals, and scam-free recruitment procedures.</p>
+      </div>
+
+      <div class="job-portals-grid">
+        <div class="portal-card">
+          <div class="portal-header">
+            <h3 class="portal-name">eJobs.ro</h3>
+            <span class="portal-badge">Romania's #1 Portal</span>
+          </div>
+          <p class="portal-desc">The largest official employment portal in Romania with over 16,000 active vacancies. Includes English search filters, "Fără experiență" (No experience required), and foreign worker categories.</p>
+          <a href="https://www.ejobs.ro" target="_blank" rel="noopener nofollow" class="portal-link-btn">
+            Browse eJobs.ro ↗
+          </a>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-header">
+            <h3 class="portal-name">BestJobs.eu</h3>
+            <span class="portal-badge">Verified Employers</span>
+          </div>
+          <p class="portal-desc">Major Romanian recruitment platform with direct employer contacts for construction, warehouses, logistics, and hotels. Features a dedicated filter for international applicants.</p>
+          <a href="https://www.bestjobs.eu" target="_blank" rel="noopener nofollow" class="portal-link-btn">
+            Browse BestJobs.eu ↗
+          </a>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-header">
+            <h3 class="portal-name">EURES Portal</h3>
+            <span class="portal-badge">Official EU Job Bank</span>
+          </div>
+          <p class="portal-desc">The European Commission's official job mobility network. Employers listed on EURES are legally vetted and authorized to issue official Romanian Work Authorizations (Aviz de Muncă).</p>
+          <a href="https://ec.europa.eu/eures" target="_blank" rel="noopener nofollow" class="portal-link-btn">
+            Visit EURES Portal ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Scam Prevention Checklist -->
+      <div class="scam-verify-card">
+        <h3 class="scam-verify-title">
+          <span>🛡️</span>
+          <span>4-Step DOFE &amp; Agency Verification Checklist for Nepali Workers</span>
+        </h3>
+        <p style="font-size:0.88rem; color:var(--text-muted); line-height:1.55;">
+          Never hand over money to an unauthorized individual agent or sub-agent without verifying these 4 steps first:
+        </p>
+        <div class="scam-verify-steps">
+          <div class="scam-step-item">
+            <span class="scam-step-num">1</span>
+            <div><strong>Verify the LT Number:</strong> Check the government Lot (LT) Number on the official Department of Foreign Employment portal (<a href="https://dofe.gov.np" target="_blank" rel="noopener" style="text-decoration:underline;">dofe.gov.np</a>).</div>
+          </div>
+          <div class="scam-step-item">
+            <span class="scam-step-num">2</span>
+            <div><strong>Confirm Agency License:</strong> Make sure the manpower company is currently active, licensed by DOFE, and not blacklisted.</div>
+          </div>
+          <div class="scam-step-item">
+            <span class="scam-step-num">3</span>
+            <div><strong>Never Pay Advance Cash:</strong> Genuine Romanian recruitment begins with an employer-sponsored Work Permit (<em>Aviz de Angajare</em>). Advance cash demands are 90%+ fraudulent.</div>
+          </div>
+          <div class="scam-step-item">
+            <span class="scam-step-num">4</span>
+            <div><strong>Bank Transfer &amp; Official Receipt:</strong> Always pay through official bank channels with an authorized company invoice. Keep all WhatsApp chats, payment slips, and contracts.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 3: Cost of Living in Romania -->
+  <section class="cost-living-section" id="cost-of-living">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">💰 Cost of Living in Romania</h2>
+        <p class="section-sub">Realistic monthly expense breakdown so you can accurately calculate how much money you can send home to Nepal.</p>
+      </div>
+
+      <div class="cost-grid">
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>🏠</span> <span>Accommodation</span></h3>
+            <span class="badge badge-cheap">Room / Flat</span>
+          </div>
+          <div class="cost-amount">600 – 1,000 RON</div>
+          <p class="cost-sub">Shared worker room (2–3 persons). Private studio outside center: 1,200–1,800 RON. <strong>Free (0 RON)</strong> if provided by your employer!</p>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>🍽️</span> <span>Food &amp; Groceries</span></h3>
+            <span class="badge badge-fast">Cooking at Home</span>
+          </div>
+          <div class="cost-amount">750 – 1,100 RON</div>
+          <p class="cost-sub">Rice, lentils, chicken, bread &amp; vegetables from Lidl, Kaufland, or Carrefour. Drops to ~300 RON if employer gives monthly meal vouchers.</p>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>💡</span> <span>Utilities (Intreținere)</span></h3>
+            <span class="badge">Per Person</span>
+          </div>
+          <div class="cost-amount">150 – 300 RON</div>
+          <p class="cost-sub">Shared electricity, gas, water, and building maintenance. Winter heating (Nov–Mar) slightly increases the total bill.</p>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>🚌</span> <span>Public Transport</span></h3>
+            <span class="badge badge-best">City Pass</span>
+          </div>
+          <div class="cost-amount">80 – 140 RON</div>
+          <p class="cost-sub">Monthly unlimited metro and bus travel card (STB &amp; Metrorex in Bucharest, CTP in Cluj, RATBv in Brașov).</p>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>📱</span> <span>Mobile SIM &amp; 5G Data</span></h3>
+            <span class="badge badge-cheap">Prepaid Cartelă</span>
+          </div>
+          <div class="cost-amount">25 – 45 RON</div>
+          <p class="cost-sub">Digi, Vodafone or Orange prepaid SIM (Cartelă PrePay) with unlimited domestic calls and 50GB–100GB high-speed data.</p>
+        </div>
+
+        <div class="cost-card">
+          <div class="cost-header">
+            <h3 class="cost-title"><span>🛒</span> <span>Personal &amp; Toiletries</span></h3>
+            <span class="badge">Monthly</span>
+          </div>
+          <div class="cost-amount">150 – 250 RON</div>
+          <p class="cost-sub">Toiletries, personal grooming, laundry detergents, and occasional leisure or clothing.</p>
+        </div>
+      </div>
+
+      <!-- Savings Potential Banner -->
+      <div class="savings-banner">
+        <h3 class="savings-banner-title">
+          <span>💵</span>
+          <span>Sathi Savings Benchmark: How Much Can You Actually Send Home?</span>
+        </h3>
+        <p class="savings-banner-text">
+          Because most Romanian employers sponsoring Nepalese workers provide <strong>free accommodation (cazare gratuită)</strong> and subsidized meals or food vouchers, your mandatory monthly living expenses can be kept as low as <strong>600 to 900 RON</strong>.
+        </p>
+
+        <div class="savings-stats-row">
+          <div class="savings-stat-box">
+            <div class="savings-stat-label">Standard Work Hours (Base Pay)</div>
+            <div class="savings-stat-val">1,800 – 2,400 RON / mo</div>
+            <div class="savings-stat-npr">≈ रु. ५६,००० – ७५,००० NPR sent home every month</div>
+          </div>
+          <div class="savings-stat-box">
+            <div class="savings-stat-label">With Regular Overtime (8 hrs/week)</div>
+            <div class="savings-stat-val">2,700 – 3,500+ RON / mo</div>
+            <div class="savings-stat-npr">≈ रु. ८४,००० – १,०९,०००+ NPR sent home every month</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature 4: Frequently Asked Questions -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">❓ Frequently Asked Questions</h2>
+        <p class="section-sub">Clear, verified answers to the most common questions about working legally, salaries, overtime, taxes, and living in Romania.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>What is the typical net take-home salary for Nepali workers in Romania?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>For general or unskilled positions (factory packaging, janitorial, kitchen assistant), the starting take-home net salary is typically <strong>2,600 to 3,500 RON/month</strong> (approx. <strong>रु. ८०,००० – १,०८,००० NPR</strong>). For skilled trades (construction masons, carpenters, electricians, forklift operators), net wages range from <strong>4,000 to 5,200+ RON/month</strong> (approx. <strong>रु. १,२५,००० – १,६०,०००+ NPR</strong>).</p>
+            <p>Regular overtime and night shifts add additional income. If your employer provides <strong>free accommodation</strong> and <strong>monthly meal vouchers</strong>, your monthly savings will be significantly higher.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the legal overtime pay rate under Romanian labor law?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Under the Romanian Labour Code (<em>Codul Muncii</em>), standard full-time employment is 40 hours per week (8 hours/day). Overtime hours must legally be compensated with extra pay:</p>
+            <ul>
+              <li><strong>Weekday Overtime:</strong> Minimum <strong>+75%</strong> on top of your hourly wage (e.g. if base is 25 RON/hr, overtime pays 43.75 RON/hr), or compensated with paid time off within 90 days.</li>
+              <li><strong>Weekend &amp; Public Holiday Overtime:</strong> Minimum <strong>+100%</strong> (double base pay — e.g. 25 RON/hr base pays 50 RON/hr).</li>
+            </ul>
+            <p>Overtime is legally capped at an average of 8 hours per week (maximum 48 total hours in any single working week).</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How much tax and social security is deducted from my Romanian salary?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Mandatory employee payroll deductions in Romania total approximately 35% to 42% of gross salary:</p>
+            <ul>
+              <li><strong>CAS (Pension / Social Insurance):</strong> 25% of gross contribution base.</li>
+              <li><strong>CASS (Public Health Insurance):</strong> 10% of gross contribution base.</li>
+              <li><strong>PIT (Personal Income Tax):</strong> 10% on the remaining taxable income (after deducting CAS, CASS, and personal deductions).</li>
+            </ul>
+            <p>Full-time employees on the national minimum wage benefit from a <strong>300 RON tax-free allowance</strong> from their tax base, plus additional deductions if you declare dependent family members.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is the typical RON to NPR exchange rate and best way to send money home?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The mid-market exchange rate is currently around <strong>1 RON ≈ 31.0 – 31.2 NPR</strong> (and 1 EUR ≈ 5.0 RON). Digital money transfer platforms such as Wise and Remitly, or direct mobile banking remittances, typically provide mid-market rates and lower fees compared to cash exchange kiosks.</p>
+            <p>Check our <a href="/send-money/">Live Transfer Comparison Tool</a> before sending money to see real recipient payout amounts in Nepal across all providers.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How much recruitment fee is legal to pay an agency to go to Romania?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Under Nepal Department of Foreign Employment (DOFE) rules, agencies cannot charge arbitrary fees. Legitimate administrative costs (medical examination, insurance, consular visa fees, DOFE welfare fund, pre-departure orientation, and air ticket) typically total <strong>NPR 2,00,000 to 3,50,000</strong>.</p>
+            <p><strong>Warning:</strong> Never pay advance cash to an individual broker without an officially verified Lot (LT) Number from DOFE. Anyone demanding 5 to 8+ Lakhs or cash without a formal bank deposit slip is operating fraudulently. Report fraud to the <strong>DOFE Helpline at 1145</strong> or Central Investigation Bureau at <strong>01-4411550</strong>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How long does the entire Romania work visa process take from Nepal?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>The legal employment process typically requires <strong>4 to 6 months</strong> from start to arrival:</p>
+            <ol>
+              <li><strong>Work Permit (Aviz de Muncă):</strong> Romanian employer obtains authorization from the General Inspectorate for Immigration (IGI) (30–60 days).</li>
+              <li><strong>Long-Stay Visa (D/AM Visa):</strong> Agency applies online via evisa.mae.ro (30–45 days).</li>
+              <li><strong>Consular Appointment:</strong> Biometrics and passport submission at the Romanian Embassy in New Delhi or consular missions (30+ days).</li>
+              <li><strong>Final Labor Permit &amp; Departure:</strong> DOFE labor approval (श्रम स्वीकृति) in Kathmandu followed by flight deployment.</li>
+            </ol>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Which jobs have the highest demand and quota in Romania?</span>
+            <span class="faq-icon-chevron" aria-hidden="true">▼</span>
+          </summary>
+          <div class="faq-answer">
+            <p>Romania currently issues the highest contingents of foreign work authorizations for:</p>
+            <ul>
+              <li><strong>Warehouses &amp; Logistics:</strong> Order pickers, packagers, and forklift drivers for e-commerce and retail chains (eMAG, Mega Image, Lidl).</li>
+              <li><strong>Manufacturing &amp; Factories:</strong> Automotive components, electronics assembly, food processing, and garment production.</li>
+              <li><strong>Construction:</strong> Masons, carpenters, scaffolders, electricians, and general laborers.</li>
+              <li><strong>Delivery &amp; Couriers:</strong> Food courier services (Glovo, Tazz, Bolt) and commercial van drivers.</li>
+              <li><strong>Hospitality:</strong> Kitchen helpers, dishwashers, janitorial, and hotel housekeeping.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-cta-box">
+        <p class="faq-cta-text">Have a question not answered here? Check our comprehensive newcomer checklist or connect with the Nepali community in Romania.</p>
+        <div style="display:flex; justify-content:center; gap:0.75rem; flex-wrap:wrap;">
+          <a href="/start-here/" class="btn btn-primary">Open Newcomer Checklist →</a>
+          <a href="/community/" class="btn btn-secondary">Visit Community Hub</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -295,6 +1002,87 @@
   <!-- Quick Calculator JS Script -->
   <script>
     (function() {
+      var calculator = document.getElementById('salary-calculator');
+      if (calculator) {
+        var minimumGross = 4325;
+        var hoursPerMonth = 40 * 52 / 12;
+        var salaryRateRonToNpr = 31.1643;
+        var eurPerRon = 0.2;
+        var money = new Intl.NumberFormat('en-US', { maximumFractionDigits: 0 });
+        var salaryInputs = calculator.querySelectorAll('input, select');
+
+        function setAmount(id, amount, prefix) {
+          var element = document.getElementById(id);
+          if (element) element.textContent = (prefix || '') + money.format(Math.round(amount)) + ' RON';
+        }
+
+        function calculateSalary() {
+          var grossInput = document.getElementById('salary-gross');
+          var gross = Math.max(0, Number(grossInput.value) || 0);
+          var dependants = Number(document.getElementById('salary-dependents').value) || 0;
+          var regularHours = Math.max(0, Number(document.getElementById('salary-regular-ot').value) || 0);
+          var weekendHours = Math.max(0, Number(document.getElementById('salary-weekend-ot').value) || 0);
+          var totalHours = Math.min(8, regularHours + weekendHours);
+          var cappedRegularHours = Math.min(regularHours, totalHours);
+          var cappedWeekendHours = Math.max(0, totalHours - cappedRegularHours);
+          var hourlyRate = gross / hoursPerMonth;
+          var overtimeGross = hourlyRate * (cappedRegularHours * 52 / 12 * 1.75 + cappedWeekendHours * 52 / 12 * 2);
+          var totalGross = gross + overtimeGross;
+          function getTaxBreakdown(amount) {
+            var qualifiesForDeduction = amount > 0 && amount <= minimumGross + 2000;
+            var relief = qualifiesForDeduction ? 300 : 0;
+            var contributionBase = Math.max(0, amount - relief);
+            var cas = contributionBase * 0.25;
+            var cass = contributionBase * 0.10;
+            var personalDeduction = qualifiesForDeduction ? minimumGross * (0.2 + Math.min(dependants, 4) * 0.05) : 0;
+            var pit = Math.max(0, amount - relief - cas - cass - personalDeduction) * 0.10;
+            return {
+              relief: relief,
+              cas: cas,
+              cass: cass,
+              personalDeduction: personalDeduction,
+              pit: pit,
+              net: Math.max(0, amount - cas - cass - pit)
+            };
+          }
+          var taxes = getTaxBreakdown(totalGross);
+          var net = taxes.net;
+          var overtimeNet = Math.max(0, net - getTaxBreakdown(gross).net);
+          var benefits = 0;
+
+          calculator.querySelectorAll('[data-benefit]:checked').forEach(function(input) {
+            benefits += Number(input.getAttribute('data-benefit')) || 0;
+          });
+          if (document.getElementById('salary-thirteenth').checked) benefits += net / 12;
+
+          setAmount('salary-hourly', hourlyRate);
+          setAmount('salary-overtime-gross', overtimeGross, '+ ');
+          setAmount('salary-overtime-net', overtimeNet, '+ ');
+          setAmount('salary-base-row', gross);
+          setAmount('salary-overtime-row', overtimeGross, '+ ');
+          setAmount('salary-total-gross', totalGross);
+          setAmount('salary-relief', taxes.relief, '− ');
+          setAmount('salary-cas', taxes.cas, '− ');
+          setAmount('salary-cass', taxes.cass, '− ');
+          setAmount('salary-personal-deduction', taxes.personalDeduction, '− ');
+          setAmount('salary-pit', taxes.pit, '− ');
+          setAmount('salary-net', net);
+          setAmount('salary-value-net', net);
+          setAmount('salary-benefit-value', benefits, '+ ');
+          setAmount('salary-value-total', net + benefits);
+          document.getElementById('salary-value-npr').textContent = 'रु. ' + money.format(Math.round((net + benefits) * salaryRateRonToNpr));
+          document.getElementById('salary-value-eur').textContent = '€' + money.format(Math.round((net + benefits) * eurPerRon));
+          document.getElementById('salary-minimum-warning').hidden = !gross || gross >= minimumGross;
+          document.getElementById('salary-minimum-warning').textContent = 'This gross offer is below the 4,325 RON reference minimum. Verify the current legal minimum and your employment terms.';
+        }
+
+        salaryInputs.forEach(function(input) {
+          input.addEventListener('input', calculateSalary);
+          input.addEventListener('change', calculateSalary);
+        });
+        calculateSalary();
+      }
+
       var ronInput = document.getElementById('home-calc-ron');
       var resEl = document.getElementById('home-calc-res');
       var rateEl = document.getElementById('home-rate-val');
@@ -306,6 +1094,8 @@
           if (d && d.currentRate) {
             currentRate = d.currentRate;
             if (rateEl) rateEl.textContent = currentRate.toFixed(2);
+            salaryRateRonToNpr = currentRate;
+            if (calculator) calculateSalary();
             calc();
           }
         })
