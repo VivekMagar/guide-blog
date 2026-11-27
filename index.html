@@ -190,9 +190,92 @@
       font-size: 0.78rem;
       line-height: 1.55;
     }
+    .community-experience-panel {
+      display: grid;
+      gap: 1.1rem;
+      margin-top: 1.35rem;
+    }
+    .community-share-card,
+    .community-stories-card {
+      padding: 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-card);
+      box-shadow: var(--shadow-sm);
+    }
+    .community-share-card h3,
+    .community-stories-card h3 {
+      margin-bottom: 0.85rem;
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+    .community-share-fields {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .community-share-card .newsletter-input {
+      width: 100%;
+    }
+    .community-share-card textarea.newsletter-input {
+      min-height: 100px;
+      resize: vertical;
+    }
+    .community-share-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.65rem;
+    }
+    .community-share-actions .newsletter-input {
+      width: auto;
+      min-width: 150px;
+      min-height: 42px;
+      padding: 0.55rem 0.65rem;
+    }
+    .community-stories-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .community-story {
+      padding: 0.85rem;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      background: var(--bg-card-subtle);
+    }
+    .community-story-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.35rem;
+      color: var(--text);
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+    .community-story-header span:last-child {
+      color: var(--saffron);
+      white-space: nowrap;
+    }
+    .community-story p {
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      line-height: 1.55;
+    }
+    .community-share-status {
+      min-height: 1.2em;
+      color: var(--up);
+      font-size: 0.82rem;
+      font-weight: 750;
+    }
     @media (min-width: 768px) {
       .community-experience-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+      .community-experience-panel {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+      .community-share-fields {
+        grid-template-columns: 1fr 1fr;
       }
       .community-experience-card {
         padding: 1.5rem;
@@ -303,6 +386,59 @@
           <p><strong>Community lesson:</strong> Arrange a Romanian SIM, bank account, accommodation, transport, and family doctor registration early. Keep the contact details of trusted Nepali community groups and official local services nearby.</p>
         </article>
       </div>
+
+      <div class="community-experience-panel">
+        <form class="community-share-card" id="community-share-form">
+          <h3>Share your experience</h3>
+          <div class="community-share-fields">
+            <label>
+              <span class="sr-only">Your name</span>
+              <input type="text" id="community-name" class="newsletter-input" placeholder="Your name (optional)" maxlength="50" />
+            </label>
+            <label>
+              <span class="sr-only">City in Romania</span>
+              <input type="text" id="community-city" class="newsletter-input" placeholder="City (e.g. Bucharest)" maxlength="50" />
+            </label>
+          </div>
+          <label>
+            <span class="sr-only">Your experience</span>
+            <textarea id="community-text" class="newsletter-input" placeholder="Share a practical tip or workplace experience..." maxlength="500" required></textarea>
+          </label>
+          <div class="community-share-actions">
+            <label>
+              <span class="sr-only">Rating</span>
+              <select id="community-rating" class="newsletter-input" aria-label="Experience rating">
+                <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="4">⭐⭐⭐⭐ Good</option>
+                <option value="3">⭐⭐⭐ Average</option>
+                <option value="2">⭐⭐ Difficult</option>
+                <option value="1">⭐ Very difficult</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Post experience</button>
+          </div>
+          <p class="community-share-status" id="community-share-status" role="status"></p>
+        </form>
+
+        <div class="community-stories-card">
+          <h3>Community stories</h3>
+          <div class="community-stories-list" id="community-stories-list">
+            <article class="community-story">
+              <div class="community-story-header"><span>Bikash · Bucharest</span><span>★★★★★</span></div>
+              <p>Keeping a photocopy of the contract and payslip helped me resolve a deduction question quickly with the employer.</p>
+            </article>
+            <article class="community-story">
+              <div class="community-story-header"><span>Anonymous · Cluj-Napoca</span><span>★★★★☆</span></div>
+              <p>Opening a Romanian bank account early made monthly salary payments and family transfers much easier.</p>
+            </article>
+            <article class="community-story">
+              <div class="community-story-header"><span>Sabina · Brașov</span><span>★★★★★</span></div>
+              <p>Joining a trusted local community group helped me find reliable transport and understand office procedures.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+
       <div class="community-experience-footer">
         <p class="community-experience-note">Community summaries are for general guidance only and do not represent guaranteed outcomes or legal advice.</p>
         <a href="/community/" class="btn btn-secondary">Visit the Community →</a>
@@ -1109,6 +1245,49 @@
       }
 
       if (ronInput) ronInput.addEventListener('input', calc);
+    })();
+  </script>
+
+  <script>
+    (function () {
+      var form = document.getElementById('community-share-form');
+      if (!form) return;
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var name = document.getElementById('community-name').value.trim() || 'Anonymous';
+        var city = document.getElementById('community-city').value.trim() || 'Romania';
+        var text = document.getElementById('community-text').value.trim();
+        var rating = parseInt(document.getElementById('community-rating').value, 10) || 5;
+
+        if (!text) {
+          document.getElementById('community-share-status').textContent = 'Please write your experience before posting.';
+          return;
+        }
+
+        var stars = '★★★★★'.slice(0, rating) + '☆☆☆☆☆'.slice(0, 5 - rating);
+        var article = document.createElement('article');
+        article.className = 'community-story';
+
+        var header = document.createElement('div');
+        header.className = 'community-story-header';
+        var person = document.createElement('span');
+        person.textContent = name + ' · ' + city;
+        var score = document.createElement('span');
+        score.textContent = stars;
+        header.appendChild(person);
+        header.appendChild(score);
+
+        var message = document.createElement('p');
+        message.textContent = text;
+        article.appendChild(header);
+        article.appendChild(message);
+
+        var list = document.getElementById('community-stories-list');
+        list.insertBefore(article, list.firstChild);
+        form.reset();
+        document.getElementById('community-share-status').textContent = 'Thank you. Your experience has been added to this page.';
+      });
     })();
   </script>
   </main>
